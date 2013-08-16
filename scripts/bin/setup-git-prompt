@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+git clone git@github.com:olivierverdier/zsh-git-prompt.git ~/.dotfiles/zsh/.zsh/git-prompt
+/bin/zsh
