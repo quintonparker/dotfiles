@@ -1,0 +1,2 @@
+#!/bin/sh
+find -E . -type f -regex ".*\.php-[eE]{1}$" | xargs rm

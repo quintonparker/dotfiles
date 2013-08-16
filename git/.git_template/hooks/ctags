@@ -1,0 +1,15 @@
+#!/bin/sh
+
+if [ `pwd` == ~ ]
+then
+    echo "ooh he eh. will not generate ctags for repos cloned into home dirs"
+    exit 1
+fi
+
+set -e
+PATH="/usr/local/bin:$PATH"
+trap "rm -f .git/tags.$$" EXIT
+#ctags --tag-relative -Rf.git/tags.$$ --exclude=.git --languages=-javascript,sql
+ctags --tag-relative -Rf.git/tags.$$ --exclude=.git
+mv .git/tags.$$ .git/tags
+echo `basename \`pwd\`` `wc -l .git/tags` " tags updated" | growlnotify -t "ctags"

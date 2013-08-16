@@ -1,0 +1,31 @@
+[user]
+    name = Q
+    email = quintonparker@gmail.com
+[github]
+    user = quintonparker@gmail.com
+[color]
+    status = auto
+    branch = auto
+    interactive = auto
+    diff = auto
+    ui = true
+[alias]
+    co = checkout
+    ci = commit
+    rb = rebase
+    br = branch
+    st = status
+    ctags = !.git/hooks/ctags
+	d = difftool
+	m = mergetool
+[init]
+    templatedir = ~/.git_template
+[core]
+    excludesfile = ~/.gitignore_global
+    editor = /usr/bin/vim
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[merge]
+	tool = vimdiff
