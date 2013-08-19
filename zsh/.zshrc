@@ -26,13 +26,13 @@ promptinit
 # set default prompt to walters theme
 prompt walters
 
-# add fancy git prompt
-# https://github.com/olivierverdier/zsh-git-prompt 
-# included as a submodule in dotfiles repo
-if [[ -d ~/.zsh/git-prompt ]]
+RPROMPT=''
+
+# add git prompt
+# https://github.com/quintonparker/pure
+if [[ -d ~/.zsh/pure ]]
 then
-    source ~/.zsh/git-prompt/zshrc.sh
-    PROMPT='%B%m%~%b$(git_super_status) %# '
+    source ~/.zsh/pure/prompt.zsh
 fi
 
 # set emacs as default key bindings
