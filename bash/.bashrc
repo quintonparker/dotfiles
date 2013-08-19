@@ -27,10 +27,6 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
 
-if [ -f `brew --prefix`/etc/autojump ]; then
-    . `brew --prefix`/etc/autojump
-fi
-
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWUNTRACKEDFILES=1
 GIT_PS1_SHOWUPSTREAM="auto"
