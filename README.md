@@ -7,4 +7,5 @@ Working on
 * making this portable
 * switching to zsh across all my \*nix homes
 * including my OSX settings
+* including mac homebrew prequisites
 * bringing sanity to all my machines
