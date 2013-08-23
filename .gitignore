@@ -1,3 +1,4 @@
 vim/.vim/bundle/
 zsh/.zsh/git-prompt*
 zsh/.zsh/cache
+scripts/bin/repo*

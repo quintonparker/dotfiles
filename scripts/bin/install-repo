@@ -1,0 +1,5 @@
+#!/bin/sh
+cd ~/bin
+wget "http://git-repo.googlecode.com/files/repo-1.19"
+chmod +x repo-1.19
+ln -s repo-1.19 repo
