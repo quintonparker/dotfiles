@@ -13,6 +13,6 @@ then
   exit
 fi
 
-brew install ack autoconf automake bash-completion ctags curl-ca-bundle dos2unix fuse4x fuse4x-kext gdbm gettext git gnu-sed hub libtool libyaml lighttpd macvim-split-browser ncurses ntfs-3g openssl pcre pkg-config pv readline sqlite stow the_silver_searcher tig wget xz zsh zsh-completions 
+brew install ack autoconf automake bash-completion ctags curl-ca-bundle dos2unix fuse4x fuse4x-kext gdbm gettext git gnu-sed hub libtool libyaml lighttpd macvim-split-browser ntfs-3g openssl pcre pkg-config pv readline sqlite stow the_silver_searcher tig wget xz zsh zsh-completions 
 
 exit 0
