@@ -1,0 +1,18 @@
+#!/bin/sh
+#
+# Homebrew
+#
+# This installs some of the common dependencies needed (or at least desired)
+# using Homebrew.
+
+# Check for Homebrew
+if test ! $(which brew)
+then
+  echo "  x You should probably install Homebrew first:"
+  echo "    https://github.com/mxcl/homebrew/wiki/installation"
+  exit
+fi
+
+brew install ack autoconf automake bash-completion ctags curl-ca-bundle dos2unix fuse4x fuse4x-kext gdbm gettext git gnu-sed hub libtool libyaml lighttpd macvim-split-browser ncurses ntfs-3g openssl pcre pkg-config pv readline sqlite stow the_silver_searcher tig wget xz zsh zsh-completions 
+
+exit 0
