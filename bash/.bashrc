@@ -1,19 +1,9 @@
 export EDITOR=vim
 export VIM_APP_DIR=/usr/local/Cellar/macvim-split-browser/20120109/
 
-alias ls='ls -G'
-alias ll='ls -lt'
-alias grep='grep --colour=always'
-alias ack='ack --colour'
-alias less='less -r'
-
-alias gco='git checkout'
-alias gci='git commit -v'
-alias gdi='git diff'
-alias gpu='git push'
-alias gpl='git pull'
-alias glg='git log --stat -p'
-alias gst='git status'
+if [ -f ~/.aliases ]; then
+    . ~/.aliases
+fi
 
 shopt -s cdspell
 

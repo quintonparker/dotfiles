@@ -47,3 +47,5 @@ setopt autocd
 setopt extendedglob
 
 setopt HIST_IGNORE_DUPS
+
+source $HOME/.aliases
