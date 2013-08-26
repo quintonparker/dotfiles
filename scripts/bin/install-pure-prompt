@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+git clone git@github.com:quintonparker/pure.git ~/.files/zsh/.zsh/pure
+/bin/zsh
