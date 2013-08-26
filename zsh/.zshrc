@@ -1,6 +1,16 @@
 # https://wiki.gentoo.org/wiki/Zsh/HOWTO
 # https://wiki.archlinux.org/index.php/Zsh#Simple_.zshrc
 
+# bin aliases
+source $HOME/.aliases
+
+#completions
+#auto-complete 3rd party bins
+if [[ -d /usr/local/share/zsh-completions ]]
+then
+    fpath=(/usr/local/share/zsh-completions $fpath)
+fi
+
 autoload -U compinit promptinit
 
 #enable funky tab completion
@@ -47,5 +57,3 @@ setopt autocd
 setopt extendedglob
 
 setopt HIST_IGNORE_DUPS
-
-source $HOME/.aliases
