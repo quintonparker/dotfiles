@@ -4,6 +4,8 @@
 #
 # This installs some of the common dependencies needed (or at least desired)
 # using Homebrew.
+# Stolen from zach holman
+# https://github.com/holman/dotfiles/blob/master/homebrew/install.sh
 
 # Check for Homebrew
 if test ! $(which brew)
