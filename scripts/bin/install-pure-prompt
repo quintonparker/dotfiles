@@ -1,4 +1,4 @@
 #!/bin/sh
 set -e
-git clone git@github.com:quintonparker/pure.git ~/.files/zsh/.zsh/pure
+git clone git@github.com:quintonparker/pure.git ~/dotfiles/zsh/.zsh/pure
 /bin/zsh
