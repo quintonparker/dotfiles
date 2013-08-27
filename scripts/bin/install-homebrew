@@ -15,6 +15,37 @@ then
   exit
 fi
 
-brew install ack autoconf automake bash-completion ctags curl-ca-bundle dos2unix fuse4x fuse4x-kext gdbm gettext git gnu-sed hub libtool libyaml lighttpd macvim-split-browser ntfs-3g openssl pcre pkg-config pv readline sqlite stow the_silver_searcher tig wget xz zsh zsh-completions 
+brew install autoconf
+brew install automake
+brew install ctags
+brew install curl-ca-bundle
+brew install dos2unix
+brew install fuse4x
+brew install fuse4x-kext
+brew install gdbm
+brew install gettext
+brew install --with-blk-sha1 --with-pcre --with-gettext git
+brew install gnu-sed
+# workaround for hub completion bug https://github.com/github/hub/issues/231
+brew install --HEAD hub
+brew install libtool
+brew install libyaml
+brew install lighttpd
+brew install macvim-split-browser
+brew install ncurses
+brew install ntfs-3g
+brew install openssl
+brew install pcre
+brew install pkg-config
+brew install pv
+brew install readline
+brew install sqlite
+brew install stow
+brew install the_silver_searcher
+brew install tig
+brew install wget
+brew install xz
+brew install zsh
+brew install zsh-completions
 
 exit 0
