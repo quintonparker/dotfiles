@@ -1,8 +1,0 @@
-#!/bin/sh
-
-if [[ ! -d ~/dotfiles/vim/.vim/bundle/vundle ]]
-then
-    git clone https://github.com/gmarik/vundle.git ~/dotfiles/vim/.vim/bundle/vundle
-fi
-
-vim +BundleInstall +qall

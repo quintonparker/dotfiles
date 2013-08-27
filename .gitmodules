@@ -4,3 +4,36 @@
 [submodule "osx/iTerm/schemes"]
 	path = osx/iTerm/schemes
 	url = git@github.com:mbadolato/iTerm2-Color-Schemes.git
+[submodule "vim/.vim/bundle/syntastic"]
+	path = vim/.vim/bundle/syntastic
+	url = git@github.com:scrooloose/syntastic.git
+[submodule "vim/.vim/bundle/snipmate"]
+	path = vim/.vim/bundle/snipmate
+	url = git@github.com:msanders/snipmate.vim.git
+[submodule "vim/.vim/bundle/vim-sensible"]
+	path = vim/.vim/bundle/vim-sensible
+	url = git://github.com/tpope/vim-sensible.git
+[submodule "vim/.vim/bundle/tagbar"]
+	path = vim/.vim/bundle/tagbar
+	url = git@github.com:majutsushi/tagbar.git
+[submodule "vim/.vim/bundle/matchit.zip"]
+	path = vim/.vim/bundle/matchit.zip
+	url = git@github.com:vim-scripts/matchit.zip.git
+    ignore = untracked
+[submodule "vim/.vim/bundle/ag.vim"]
+	path = vim/.vim/bundle/ag.vim
+	url = git@github.com:vim-scripts/ag.vim.git
+    ignore = untracked
+[submodule "vim/.vim/bundle/snipmate.vim"]
+	path = vim/.vim/bundle/snipmate.vim
+	url = git@github.com:msanders/snipmate.vim.git
+    ignore = untracked
+[submodule "vim/.vim/bundle/ctrlp.vim"]
+	path = vim/.vim/bundle/ctrlp.vim
+	url = git@github.com:kien/ctrlp.vim.git
+[submodule "vim/.vim/bundle/vim-fugitive"]
+	path = vim/.vim/bundle/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git
+[submodule "vim/.vim/bundle/vim-gitgutter"]
+	path = vim/.vim/bundle/vim-gitgutter
+	url = git@github.com:airblade/vim-gitgutter.git

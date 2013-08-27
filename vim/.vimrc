@@ -1,25 +1,26 @@
 set nocompatible " we don't need no vi backwards compatibility
 
-filetype off " reqd by vundle
+execute pathogen#infect()
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+"filetype off " reqd by vundle
+
+"set rtp+=~/.vim/bundle/vundle/
+"call vundle#rc()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
-Bundle 'vim-sensible'
-Bundle 'Syntastic'
-Bundle 'snipMate'
-Bundle 'ack.vim'
-Bundle 'Powerline'
-Bundle 'vim-varnish'
-Bundle 'fugitive.vim'
-Bundle 'ctrlp.vim'
-Bundle 'ag.vim'
-Bundle 'matchit.zip'
-Bundle 'Tagbar'
-Bundle 'vim-gitgutter'
+"Bundle 'gmarik/vundle'
+"Bundle 'Syntastic'
+"Bundle 'snipMate'
+"Bundle 'ack.vim'
+"Bundle 'Powerline'
+"Bundle 'vim-varnish'
+"Bundle 'fugitive.vim'
+"Bundle 'ctrlp.vim'
+"Bundle 'ag.vim'
+"Bundle 'matchit.zip'
+"Bundle 'Tagbar'
+"Bundle 'airblade/vim-gitgutter'
 
 " should be in .gvimrc but that's too \"late\"
 if has('gui_running')
