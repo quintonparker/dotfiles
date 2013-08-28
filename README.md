@@ -4,5 +4,8 @@ dotfiles
 This is mostly what's been accumulating in my OSX installs
 
 Working on 
-- [ ] making this portable to all \*nix envs
-- [ ] including my OSX settings
+- [ ] include my OSX settings
+- [ ] make an ubuntu-compatible port
+- [ ] create & uploade releases to github
+- [ ] create a one-stop install script (for OSX + Ubuntu)
+- [ ] create an auto-updater. user space cron job?
