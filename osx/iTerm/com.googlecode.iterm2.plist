@@ -4916,11 +4916,11 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1409 84 445 270 0 0 1920 1058 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>142 255 924 485 0 0 1280 778 </string>
+	<string>142 535 605 485 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 227 730 551 0 0 1280 778 </string>
+	<string>0 128 1702 930 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 95 1063 683 0 0 1280 778 </string>
+	<string>0 484 730 551 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>296 227 730 551 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -5625,7 +5625,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-08-27T06:46:20Z</date>
+	<date>2013-08-28T07:43:06Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -5677,6 +5677,6 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>1.0.0.20130622</string>
+	<string>1.0.0.20130624</string>
 </dict>
 </plist>
