@@ -24,7 +24,7 @@ brew install fuse4x
 brew install fuse4x-kext
 brew install gdbm
 brew install gettext
-brew install --with-blk-sha1 --with-pcre --with-gettext git
+brew install --with-blk-sha1 --with-pcre --with-gettext --without-completions git
 brew install gnu-sed
 # workaround for hub completion bug https://github.com/github/hub/issues/231
 brew install --HEAD hub
@@ -45,7 +45,8 @@ brew install the_silver_searcher
 brew install tig
 brew install wget
 brew install xz
-brew install zsh
+# dont forget to follow brew post-install instructions. brew info zsh
+brew install --disable-etcdir zsh
 brew install zsh-completions
 
 exit 0
