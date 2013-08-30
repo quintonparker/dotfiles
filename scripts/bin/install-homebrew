@@ -48,5 +48,6 @@ brew install xz
 # dont forget to follow brew post-install instructions. brew info zsh
 brew install --disable-etcdir zsh
 brew install zsh-completions
+brew install jq
 
 exit 0
