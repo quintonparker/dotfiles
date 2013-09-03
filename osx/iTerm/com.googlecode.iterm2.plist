@@ -4918,7 +4918,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>142 535 605 485 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 128 1702 930 0 0 1920 1058 </string>
+	<string>0 129 1702 929 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 484 730 551 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -5625,7 +5625,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-08-28T07:43:06Z</date>
+	<date>2013-09-02T13:24:24Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -5655,6 +5655,7 @@
 		<string>Profiles</string>
 		<string>Jobs</string>
 		<string>Notes</string>
+		<string>Paste History</string>
 	</array>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
