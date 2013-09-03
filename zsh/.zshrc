@@ -1,8 +1,6 @@
 # https://wiki.gentoo.org/wiki/Zsh/HOWTO
 # https://wiki.archlinux.org/index.php/Zsh#Simple_.zshrc
 
-# bin aliases
-source $HOME/.aliases
 
 #completions
 #auto-complete 3rd party bins
@@ -65,3 +63,6 @@ then
     autoload run-help
     HELPDIR=/usr/local/share/zsh/helpfiles
 fi
+
+# bin aliases
+source $HOME/.aliases
