@@ -25,9 +25,6 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
 zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
 
-# autocomplete aliases too
-setopt completealiases
-
 # load more prompts
 promptinit
 

@@ -14,6 +14,4 @@ alias gpl='git pull'
 alias glg='git log --stat -p'
 alias gst='git status'
 
-# todo. refactor assumption that compdef has been loaded
 eval "$(hub alias -s)"
-compdef git="hub"
