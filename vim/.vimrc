@@ -5,13 +5,14 @@ execute pathogen#infect()
 " ag.vim settings
 nmap <c-a> :Ag<space>
 
+" airline settings
 let g:airline#extensions#tabline#enabled = 1
 
 if has('gui_running')
     let g:airline_powerline_fonts = 1
 endif
 
-"fugitive settings
+" fugitive settings
 set statusline+=%{fugitive#statusline()}
 
 " Syntastic settings
