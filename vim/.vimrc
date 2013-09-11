@@ -5,6 +5,12 @@ execute pathogen#infect()
 " ag.vim settings
 nmap <c-a> :Ag<space>
 
+let g:airline#extensions#tabline#enabled = 1
+
+if has('gui_running')
+    let g:airline_powerline_fonts = 1
+endif
+
 "fugitive settings
 set statusline+=%{fugitive#statusline()}
 
@@ -63,7 +69,7 @@ nmap <F8> :TagbarToggle<CR>
 set visualbell " kills the beeping
 
 " set large-ish font
-set gfn=Monaco:h15
+set guifont=Meslo\ LG\ L\ DZ\ Regular\ for\ Powerline:h16
 colorscheme desert
 set background=light
 
