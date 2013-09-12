@@ -70,7 +70,7 @@ nmap <F8> :TagbarToggle<CR>
 set visualbell " kills the beeping
 
 " set large-ish font
-set guifont=Meslo\ LG\ L\ DZ\ Regular\ for\ Powerline:h15
+set guifont=Monaco\ for\ Powerline:h15
 colorscheme desert
 set background=light
 
