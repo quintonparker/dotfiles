@@ -37,6 +37,3 @@
 [submodule "vim/.vim/bundle/vim-airline"]
 	path = vim/.vim/bundle/vim-airline
 	url = https://github.com/bling/vim-airline
-[submodule "osx/fonts"]
-	path = osx/fonts
-	url = https://github.com/Lokaltog/powerline-fonts
