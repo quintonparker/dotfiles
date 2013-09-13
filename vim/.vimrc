@@ -6,10 +6,10 @@ execute pathogen#infect()
 nmap <c-a> :Ag<space>
 
 " airline settings
-let g:airline#extensions#tabline#enabled = 1
-
 if has('gui_running')
     let g:airline_powerline_fonts = 1
+else
+    let g:airline#extensions#tabline#enabled = 1
 endif
 
 " fugitive settings

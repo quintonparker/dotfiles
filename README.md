@@ -12,3 +12,5 @@ Working on
 - [ ] Revise git clone commands for deps to use shallow clones
 - [ ] Revise submodules to use shallow clones
 - [ ] Revisit vim omnicompletion
+- [ ] Pick a licence for mah dotfiles
+- [ ] Install script for macvim-splitbrowser
