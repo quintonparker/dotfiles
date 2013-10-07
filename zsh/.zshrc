@@ -51,7 +51,11 @@ setopt autocd
 # enable extended globbing queries such as cp ^*.(tar|bz2|gz) .
 setopt extendedglob
 
+# http://zsh.sourceforge.net/Doc/Release/Options.html
 setopt HIST_IGNORE_DUPS
+
+# don't store history for cmds that begin with whitespace
+setopt HIST_IGNORE_SPACE
 
 # setup zsh help
 if [[ -d /usr/local/share/zsh/helpfiles ]]
