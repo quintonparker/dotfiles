@@ -33,6 +33,9 @@ let g:ctrlp_user_command=['.git/', 'cd %s && git ls-files']
 let g:ctrlp_open_new_file='t'
 let g:ctrlp_open_multiple_files='t'
 
+so ~/.vim/bundle/vim-varnish/ftdetect/vcl.vim
+au! Syntax vcl source ~/.vim/bundle/vim-varnish/syntax/vcl.vim
+
 " autocomplete funcs and identifiers for languages
 " autocmd FileType python set omnifunc=pythoncomplete#Complete
 " autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS

@@ -37,3 +37,6 @@
 [submodule "vim/.vim/bundle/vim-airline"]
 	path = vim/.vim/bundle/vim-airline
 	url = https://github.com/bling/vim-airline
+[submodule "vim/.vim/bundle/vim-varnish"]
+	path = vim/.vim/bundle/vim-varnish
+	url = https://github.com/empanda/vim-varnish
