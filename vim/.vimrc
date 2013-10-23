@@ -45,19 +45,17 @@ au! Syntax vcl source ~/.vim/bundle/vim-varnish/syntax/vcl.vim
 " autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 "autocmd FileType c set omnifunc=ccomplete#Complete
 
+" these settings to complement, enable and/or override vim-sensible
 set tabstop=4
 set expandtab " use spaces to insert a tab
 set wrap
-
 set smartindent " smart auto-indenting for a new line
 set smarttab
 set copyindent " copy structure of existing lines when autoindenting a new line
 set shiftwidth=4 " spaces to auto indent
-
 set number " adds line numbers. woohoo
-
 set wildmode=list:longest,full
-
+set list " show sneaky whitespace chars (see vim-sensible's listchars)
 set hlsearch
 
 " shortcut keys to toggle paste mode on/off
@@ -87,5 +85,9 @@ autocmd FileType php let php_folding=0
 autocmd FileType php DoMatchParen
 autocmd FileType php hi MatchParen ctermbg=blue guibg=lightblue
 
-" disable auto directory switching 
+" disable auto directory switching
 set noautochdir
+
+" autoprompt to trim trailing whitespace for certain files
+" on save
+autocmd FileType php,python,css,js,html,sql,vcl autocmd BufWritePre <buffer> :%s,\s\+$,,gc
