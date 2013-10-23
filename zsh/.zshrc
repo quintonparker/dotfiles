@@ -51,11 +51,17 @@ setopt autocd
 # enable extended globbing queries such as cp ^*.(tar|bz2|gz) .
 setopt extendedglob
 
-# http://zsh.sourceforge.net/Doc/Release/Options.html
-setopt HIST_IGNORE_DUPS
-
 # don't store history for cmds that begin with whitespace
-setopt HIST_IGNORE_SPACE
+# see http://zsh.sourceforge.net/Guide/zshguide02.html#l18
+HISTFILE=$HOME/.zhistory
+HISTSIZE=SAVEHIST=99999
+setopt HIST_IGNORE_DUPS # don't store new cmd if same as prev
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_FIND_NO_DUPS # don't show dupes in rev searches
+setopt HIST_IGNORE_SPACE # used for cmds i don't want stored in history
+setopt SHARE_HISTORY # intelligently share history between shells
+setopt HIST_VERIFY # don't automagically run a substituted hist cmd
+setopt EXTENDED_HISTORY # This makes the format of the history entry more complicated: in addition to just the command, it saves the time when the command was started and how long it ran for.
 
 # setup zsh help
 if [[ -d /usr/local/share/zsh/helpfiles ]]

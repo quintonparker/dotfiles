@@ -4,7 +4,7 @@ alias grep='grep --colour=always'
 alias ack='ack --colour'
 alias less='less -r'
 alias diffsbs='diff --side-by-side --suppress-common-lines'
-alias psaux='ps aux'
+alias hist='history -f -D'
 
 alias gco='git checkout'
 alias gci='git commit -v'
