@@ -58,15 +58,18 @@ set wildmode=list:longest,full
 set list " show sneaky whitespace chars (see vim-sensible's listchars)
 set hlsearch
 
+" map F7 to trim detected trailing whitespace. requires confirmation
+map <F7> :%s,\s\+$,,gc<CR>
+
+" tagbar settings
+nmap <F8> :TagbarToggle<CR>
+
 " shortcut keys to toggle paste mode on/off
 map <F9> :set paste<CR>
 map <F10> :set nopaste<CR>
 imap <F9> <C-O>:set paste<CR>
 imap <F10> <nop>
 set pastetoggle=<F10>
-
-" tagbar settings
-nmap <F8> :TagbarToggle<CR>
 
 set visualbell " kills the beeping
 
@@ -87,7 +90,3 @@ autocmd FileType php hi MatchParen ctermbg=blue guibg=lightblue
 
 " disable auto directory switching
 set noautochdir
-
-" autoprompt to trim trailing whitespace for certain files
-" on save
-autocmd FileType php,python,css,js,html,sql,vcl autocmd BufWritePre <buffer> :%s,\s\+$,,gc
