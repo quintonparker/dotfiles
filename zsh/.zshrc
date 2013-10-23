@@ -12,7 +12,7 @@ fi
 autoload -U compinit promptinit
 
 #enable funky tab completion
-compinit
+compinit -u
 
 #cache completions
 zstyle ':completion:*' use-cache on
