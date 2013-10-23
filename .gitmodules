@@ -31,9 +31,6 @@
 [submodule "vim/.vim/bundle/vim-fugitive"]
     path = vim/.vim/bundle/vim-fugitive
     url = git@github.com:tpope/vim-fugitive.git
-[submodule "vim/.vim/bundle/vim-gitgutter"]
-    path = vim/.vim/bundle/vim-gitgutter
-    url = git@github.com:airblade/vim-gitgutter.git
 [submodule "vim/.vim/bundle/vim-airline"]
     path = vim/.vim/bundle/vim-airline
     url = https://github.com/bling/vim-airline
