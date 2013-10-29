@@ -1,0 +1,3 @@
+#!/bin/sh
+
+wget --keep-session-cookies -w 1 -r -k -np -p --user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9) AppleWebKit/537.71 (KHTML, like Gecko) Version/7.0 Safari/537.71" $@
