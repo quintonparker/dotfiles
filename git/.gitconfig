@@ -16,20 +16,21 @@
     br = branch
     st = status
     ctags = !.git/hooks/ctags
-	d = difftool
-	m = mergetool
+    vidiff = difftool
+    vimerge = mergetool
+    diffws = "diff --ignore-space-at-eol --ignore-space-change --ignore-all-space --ignore-blank-lines"
 [init]
     templatedir = ~/.git_template
 [core]
     excludesfile = ~/.gitignore_global
     editor = /usr/bin/vim
 [diff]
-	tool = vimdiff
+    tool = vimdiff
 [difftool]
-	prompt = false
+    prompt = false
 [merge]
-	tool = vimdiff
+    tool = vimdiff
 [credential]
-	helper = osxkeychain
+    helper = osxkeychain
 [push]
-	default = simple
+    default = simple
