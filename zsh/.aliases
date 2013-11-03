@@ -6,6 +6,7 @@ alias less='less -r'
 alias diffsbs='diff --side-by-side --suppress-common-lines'
 alias hist='history -f -D'
 
+alias gadd='git add'
 alias gco='git checkout'
 alias gci='git commit -v'
 alias gdi='git diff'
