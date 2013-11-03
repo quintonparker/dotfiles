@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if test ! $(which brew)
+then
+    ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+fi
+
+brew install stow
+
+DOTFILES_DIR=`dirname "${BASH_SOURCE[0]}"`/../../
+
+stow --ignore="\.DS_Store" -d $DOTFILES_DIR -t $HOME -v 2 -S zsh -S vim -S git -S ctags -S scripts
