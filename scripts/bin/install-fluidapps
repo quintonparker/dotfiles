@@ -1,6 +1,14 @@
 #!/bin/sh
 
-mkdir -vp ~/Applications
-cd ~/Applications
-
-git clone git@github.com:quintonparker/fluid.git
+if [ -d ~/Applications/fluid ]
+then
+    cd ~/Applications/fluid
+    pwd
+    git checkout master
+    git pull origin master
+else
+    mkdir -vp ~/Applications
+    pwd
+    cd ~/Applications
+    git clone git@github.com:quintonparker/fluid.git fluid
+fi
