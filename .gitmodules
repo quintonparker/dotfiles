@@ -32,7 +32,7 @@
     url = https://github.com/bling/vim-airline
 [submodule "vim/.vim/bundle/vim-varnish"]
     path = vim/.vim/bundle/vim-varnish
-    url = https://github.com/empanda/vim-varnish
+    url = https://github.com/lpomfrey/vim-varnish
 [submodule "vim/.vim/bundle/ag.vim-upgrade"]
-	path = vim/.vim/bundle/ag.vim-upgrade
-	url = https://github.com/rking/ag.vim
+    path = vim/.vim/bundle/ag.vim-upgrade
+    url = https://github.com/rking/ag.vim
