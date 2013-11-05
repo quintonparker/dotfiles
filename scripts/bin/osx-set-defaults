@@ -185,6 +185,7 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 for app in "Dashboard" "Dock" "Finder" "Safari" "SystemUIServer"; do
-	killall "$app" > /dev/null 2>&1
+    killall "$app" > /dev/null 2>&1
 done
+
 echo "Done. Note that some of these changes require a logout/restart to take effect."
