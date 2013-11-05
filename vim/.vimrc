@@ -86,11 +86,7 @@ set background=light
 autocmd FileType php let php_sql_query=1
 autocmd FileType php let php_htmlInStrings=1
 autocmd FileType php let php_noShortTags=0
-autocmd FileType php let php_folding=0
-
-" set auto-highlighting of matching brackets for php only
-autocmd FileType php DoMatchParen
-autocmd FileType php hi MatchParen ctermbg=blue guibg=lightblue
+autocmd FileType php let php_folding=1
 
 " disable auto directory switching
 set noautochdir
