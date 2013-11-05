@@ -31,7 +31,10 @@ brew install --HEAD hub
 brew install libtool
 brew install libyaml
 brew install lighttpd
+
+brew tap joelcogen/macvimsplitbrowser
 brew install macvim-split-browser
+
 brew install ncurses
 brew install ntfs-3g
 brew install openssl
