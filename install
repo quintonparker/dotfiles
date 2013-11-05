@@ -25,6 +25,6 @@ cd "$DOTFILES_DIR/scripts/bin/"
 ./install-vim-plugins
 ./osx-set-defaults
 
-exec zsh
+cd $HOME
 
-cd ~
+exec zsh
