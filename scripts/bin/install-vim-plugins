@@ -4,4 +4,4 @@ set -e
 
 cd ~/.vim
 
-git submodule update --recursive
+git submodule update --init --recursive
