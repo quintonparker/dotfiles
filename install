@@ -9,10 +9,11 @@ fi
 
 brew install stow
 
-DOTFILES_DIR=`dirname "${BASH_SOURCE[0]}"`/../../
+pushd `dirname $0` >> /dev/null
+DOTFILES_DIR=`pwd -P`
 
 cd $DOTFILES_DIR
 
 git submodule update --init --recursive
 
-stow --ignore="\.DS_Store" -d $DOTFILES_DIR -t $HOME -v 2 -S zsh -S vim -S git -S ctags -S scripts
+stow --ignore="\.DS_Store" -d $DOTFILES_DIR -t $HOME -v 1 -S zsh -S vim -S git -S ctags -S scripts
