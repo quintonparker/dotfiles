@@ -21,10 +21,6 @@
     path = vim/.vim/bundle/matchit.zip
     url = git@github.com:vim-scripts/matchit.zip.git
     ignore = untracked
-[submodule "vim/.vim/bundle/ag.vim"]
-    path = vim/.vim/bundle/ag.vim
-    url = git@github.com:vim-scripts/ag.vim.git
-    ignore = untracked
 [submodule "vim/.vim/bundle/ctrlp.vim"]
     path = vim/.vim/bundle/ctrlp.vim
     url = git@github.com:kien/ctrlp.vim.git
@@ -37,3 +33,12 @@
 [submodule "vim/.vim/bundle/vim-varnish"]
     path = vim/.vim/bundle/vim-varnish
     url = https://github.com/empanda/vim-varnish
+[submodule "vim/.vim/bundle/vim-syntax-vcl"]
+	path = vim/.vim/bundle/vim-syntax-vcl
+	url = https://github.com/pld-linux/vim-syntax-vcl
+[submodule "vim/.vim/plugin/vim-syntax-vcl"]
+	path = vim/.vim/plugin/vim-syntax-vcl
+	url = https://github.com/pld-linux/vim-syntax-vcl
+[submodule "vim/.vim/bundle/ad.vim"]
+	path = vim/.vim/bundle/ad.vim
+	url = https://github.com/rking/ag.vim
