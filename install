@@ -18,9 +18,9 @@ git submodule update --init --recursive
 
 stow --ignore="\.DS_Store" -d $DOTFILES_DIR -t $HOME -v 1 -S zsh -S vim -S git -S ctags -S scripts
 
-exec zsh
+cd "$DOTFILES_DIR/scripts/bin/"
 
-install-homebrew
-install-monaco-font
-install-vim-plugins
-osx-set-defaults
+./install-homebrew
+./install-monaco-font
+./install-vim-plugins
+./osx-set-defaults
