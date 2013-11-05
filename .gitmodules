@@ -29,10 +29,10 @@
     url = git@github.com:tpope/vim-fugitive.git
 [submodule "vim/.vim/bundle/vim-airline"]
     path = vim/.vim/bundle/vim-airline
-    url = https://github.com/bling/vim-airline
+    url = git@github.com:bling/vim-airline
 [submodule "vim/.vim/bundle/ag.vim-upgrade"]
     path = vim/.vim/bundle/ag.vim-upgrade
-    url = https://github.com/rking/ag.vim
+    url = git@github.com:rking/ag.vim
 [submodule "vim/.vim/bundle/vim-varnish"]
     path = vim/.vim/bundle/vim-varnish
-    url = https://github.com/lpomfrey/vim-varnish
+    url = git@github.com:lpomfrey/vim-varnish
