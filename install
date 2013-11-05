@@ -26,3 +26,5 @@ cd "$DOTFILES_DIR/scripts/bin/"
 ./osx-set-defaults
 
 exec zsh
+
+cd ~
