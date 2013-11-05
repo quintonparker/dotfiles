@@ -24,3 +24,5 @@ cd "$DOTFILES_DIR/scripts/bin/"
 ./install-monaco-font
 ./install-vim-plugins
 ./osx-set-defaults
+
+exec zsh
