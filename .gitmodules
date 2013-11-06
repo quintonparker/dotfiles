@@ -39,3 +39,6 @@
 [submodule "vim/vim/.vim/bundle/ack.vim"]
 	path = vim/vim/.vim/bundle/ack.vim
 	url = https://github.com/mileszs/ack.vim
+[submodule "vim/.vim/bundle/vim-filetype-xdebug"]
+	path = vim/.vim/bundle/vim-filetype-xdebug
+	url = git@github.com:dominics/vim-filetype-xdebug.git
