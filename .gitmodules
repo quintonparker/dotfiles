@@ -45,3 +45,9 @@
 [submodule "vim/.vim/bundle/vim-json"]
 	path = vim/.vim/bundle/vim-json
 	url = https://github.com/elzr/vim-json
+[submodule "vim/.vim/bundle/vim-surround"]
+	path = vim/.vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "vim/.vim/bundle/vim-repeat"]
+	path = vim/.vim/bundle/vim-repeat
+	url = https://github.com/tpope/vim-repeat
