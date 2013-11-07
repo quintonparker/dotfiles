@@ -2,9 +2,6 @@ set nocompatible " we don't need no vi backwards compatibility
 
 execute pathogen#infect()
 
-" ag.vim settings
-nmap <c-a> :Ag<space>
-
 " airline settings
 if has('gui_running')
     let g:airline_powerline_fonts = 1
@@ -33,13 +30,14 @@ let g:ctrlp_user_command=['.git/', 'cd %s && git ls-files']
 let g:ctrlp_open_new_file='t'
 let g:ctrlp_open_multiple_files='t'
 
-" for snipmate
+" snipmate settings
 autocmd BufNewFile,BufRead *.phtml  set ft=php.html.js.css
 
 " varnish vcl syntax highlighting
 so ~/.vim/bundle/vim-varnish/ftdetect/vcl.vim
 au! Syntax vcl source ~/.vim/bundle/vim-varnish/syntax/vcl.vim
 
+" disabled because it's too laggy. perhaps revisit and figure out why
 " autocomplete funcs and identifiers for languages
 " autocmd FileType python set omnifunc=pythoncomplete#Complete
 " autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
@@ -47,7 +45,7 @@ au! Syntax vcl source ~/.vim/bundle/vim-varnish/syntax/vcl.vim
 " autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 " autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 " autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-"autocmd FileType c set omnifunc=ccomplete#Complete
+" autocmd FileType c set omnifunc=ccomplete#Complete
 
 " these settings to complement, enable and/or override vim-sensible
 set tabstop=4
@@ -61,19 +59,49 @@ set number " adds line numbers. woohoo
 set wildmode=list:longest,full
 set list " show sneaky whitespace chars (see vim-sensible's listchars)
 set hlsearch
+set gdefault " applies substitutions globally on lines by default
 
-" map F7 to trim detected trailing whitespace. requires confirmation
-map <F7> :%s,\s\+$,,gc<CR>
+" START KEY mappings
+" allow bracket matching using tab instead of %
+nnoremap <tab> %
+vnoremap <tab> %
 
-" tagbar settings
-nmap <F8> :TagbarToggle<CR>
+" shortcut to switch off search highlighting
+nnoremap <leader><space> :noh<cr>
 
-" shortcut keys to toggle paste mode on/off
-map <F9> :set paste<CR>
-map <F10> :set nopaste<CR>
-imap <F9> <C-O>:set paste<CR>
-imap <F10> <nop>
-set pastetoggle=<F10>
+" save a key hit when saving a file
+nnoremap ; :
+
+nnoremap <leader>a :Ack<space>
+nnoremap <leader>g :Ag<space>
+nnoremap <leader>t :TagbarToggle<CR>
+nnoremap <leader>p :set paste<CR>
+nnoremap <leader>pp :set nopaste<CR>
+nnoremap <leader>w :%s,\s\+$,,gc<CR>
+
+" edit $MYVIMRC on the fly in any window
+nnoremap <leader>ee :tabnew $MYVIMRC<cr>
+nnoremap <leader>rr :so $MYVIMRC<cr>
+
+" automatically source vim sessions so I can open them with the finder
+au BufRead *.vis so %
+" save sessions with .vis extension
+map <leader>s :mksession! session.vis<CR>
+
+" force me to use vim correctly
+" no to cursor keys even in insert mode
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+nnoremap j gj
+nnoremap k gk
+
+" END KEY mappings
 
 set visualbell " kills the beeping
 

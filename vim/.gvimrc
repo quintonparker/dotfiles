@@ -6,8 +6,5 @@ set background=dark
 
 set cursorline
 
-" save sessions with .vis extension
-map <leader>s :mksession!  session.vis<CR>
-
-" automatically source vim sessions so I can open them with the finder
-au BufRead *.vis so %
+nnoremap <leader>rr :so $MYVIMRC<cr>:so $MYGVIMRC<cr>
+nnoremap <leader>ee :tabnew $MYVIMRC<cr>:tabnew $MYGVIMRC<cr>
