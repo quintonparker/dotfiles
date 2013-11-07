@@ -1,56 +1,12 @@
 #!/bin/sh
-#
-# Homebrew
-#
-# This install --verboses some of the common dependencies needed (or at least desired)
-# using Homebrew.
-# Stolen from zach holman
-# https://github.com/holman/dotfiles/blob/master/homebrew/install --verbose.sh
 
-# Check for Homebrew
+set -e
+
+echo ">> Installing homebrew"
+
 if test ! $(which brew)
 then
-  echo "  x You should probably install --verbose Homebrew first:"
-  echo "    https://github.com/mxcl/homebrew/wiki/install --verboseation"
-  exit
+    ruby "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+else
+    echo "Already installed at" `which brew`
 fi
-
-brew install --verbose autoconf
-brew install --verbose automake
-brew install --verbose ctags
-brew install --verbose curl-ca-bundle
-brew install --verbose dos2unix
-brew install --verbose fuse4x
-brew install --verbose fuse4x-kext
-brew install --verbose gdbm
-brew install --verbose gettext
-brew install --verbose --with-blk-sha1 --with-pcre --with-gettext --without-completions git
-brew install --verbose gnu-sed
-# workaround for hub completion bug https://github.com/github/hub/issues/231
-brew install --verbose --HEAD hub
-brew install --verbose libtool
-brew install --verbose libyaml
-brew install --verbose lighttpd
-
-brew tap joelcogen/macvimsplitbrowser
-brew install --verbose macvim-split-browser
-
-brew install --verbose ncurses
-brew install --verbose ntfs-3g
-brew install --verbose openssl
-brew install --verbose pcre
-brew install --verbose pkg-config
-brew install --verbose pv
-brew install --verbose readline
-brew install --verbose sqlite
-brew install --verbose stow
-brew install --verbose the_silver_searcher
-brew install --verbose tig
-brew install --verbose wget
-brew install --verbose xz
-# dont forget to follow brew post-install --verbose instructions. brew info zsh
-brew install --verbose --disable-etcdir zsh
-brew install --verbose zsh-completions
-brew install --verbose jq
-
-exit 0

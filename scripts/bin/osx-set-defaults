@@ -1,9 +1,13 @@
+#!/bin/sh
+
 # forked from https://raw.github.com/mathiasbynens/dotfiles/master/.osx
 # ~/.osx http://mths.be/osx
 
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
+
+echo "Applying OSX settings..."
 
 # Menu bar: disable transparency
 defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false

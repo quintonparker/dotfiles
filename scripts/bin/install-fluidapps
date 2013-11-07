@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo "Installing/Updating fluid apps"
+
 if [ -d ~/Applications/fluid ]
 then
     cd ~/Applications/fluid

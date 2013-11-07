@@ -1,30 +1,50 @@
-#!/bin/sh
+#!/bin/bash
 
 set -e
-
-if test ! $(which brew)
-then
-    ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
-fi
-
-brew install stow
 
 pushd `dirname $0` >> /dev/null
 DOTFILES_DIR=`pwd -P`
 
 cd $DOTFILES_DIR
+pwd
 
+echo "Installing dotfiles' submodules..."
 git submodule update --init --recursive
 
+cd "$DOTFILES_DIR/scripts/bin/"
+pwd
+
+./install-homebrew
+
+echo "Installing gnu stow (dotfile deploy tool)..."
+brew install stow
+
+echo "Symlinking in dot files..."
 stow --ignore="\.DS_Store" -d $DOTFILES_DIR -t $HOME -v 1 -S zsh -S vim -S git -S ctags -S scripts
 
 cd "$DOTFILES_DIR/scripts/bin/"
+pwd
 
-./install-homebrew
+./install-homebrew-formulas
 ./install-monaco-font
 ./install-vim-plugins
 ./osx-set-defaults
 
 cd $HOME
+pwd
 
-exec zsh
+BREW_ZSH="/usr/local/bin/zsh"
+
+if [ $SHELL != $BREW_ZSH ]
+then
+    if [[ `cat /etc/shells | grep {$BREW_ZSH} | wc -l | sed -e 's, ,,g'` == "0" ]]
+    then
+        echo "Enter password to append $BREW_ZSH to /etc/shells"
+        echo $BREW_ZSH | sudo tee -a /etc/shells
+    fi
+
+    echo ">> Make zsh the default shell? <C-c> to cancel"
+    chsh -s $BREW_ZSH
+    exec zsh
+    echo "You should restart your terminal for new shell to take effect!"
+fi
