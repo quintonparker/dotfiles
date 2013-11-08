@@ -10,6 +10,7 @@
     diff = auto
     ui = true
 [alias]
+    ai = add --interactive
     co = checkout
     ci = commit
     rb = rebase
