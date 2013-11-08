@@ -62,6 +62,9 @@ set hlsearch
 set gdefault " applies substitutions globally on lines by default
 
 " START KEY mappings
+
+set timeout timeoutlen=300 ttimeoutlen=100
+
 " allow bracket matching using tab instead of %
 nnoremap <tab> %
 vnoremap <tab> %
@@ -74,17 +77,18 @@ nnoremap ; :
 
 nnoremap <leader>a :Ack<space>
 nnoremap <leader>g :Ag<space>
-nnoremap <leader>t :TagbarToggle<CR>
+
+nnoremap <leader>tt :TagbarToggle<CR>
 nnoremap <leader>p :set paste<CR>
 nnoremap <leader>pp :set nopaste<CR>
 nnoremap <leader>w :%s,\s\+$,,gc<CR>
-nnoremap <leader>ts :%s,\t\+,    ,gc<CR>
+nnoremap <leader><tab> :%s,\t\+,    ,gc<CR>
 nnoremap <leader>d :bd<CR>
 nnoremap <leader>dd :bufdo bd<CR>
 
 " edit $MYVIMRC on the fly in any window
-nnoremap <leader>ee :tabnew $MYVIMRC<cr>
-nnoremap <leader>rr :so $MYVIMRC<cr>
+nnoremap <leader>e :tabnew $MYVIMRC<cr>
+nnoremap <leader>r :so $MYVIMRC<cr>
 
 " automatically source vim sessions so I can open them with the finder
 au BufRead *.vis so %
