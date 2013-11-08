@@ -78,7 +78,7 @@ nnoremap <leader>t :TagbarToggle<CR>
 nnoremap <leader>p :set paste<CR>
 nnoremap <leader>pp :set nopaste<CR>
 nnoremap <leader>w :%s,\s\+$,,gc<CR>
-nnoremap <leader>ts :%s,\t,    ,gc<CR>
+nnoremap <leader>ts :%s,\t\+,    ,gc<CR>
 nnoremap <leader>d :bd<CR>
 nnoremap <leader>dd :bufdo bd<CR>
 
@@ -93,8 +93,8 @@ map <leader>s :mksession! session.vis<CR>
 
 " force me to use vim correctly
 " no to cursor keys even in insert mode
-nnoremap <up> <nop>
-nnoremap <down> <nop>
+nnoremap <up> <C-u>
+nnoremap <down> <C-d>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
 inoremap <up> <nop>
