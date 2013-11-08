@@ -2,13 +2,14 @@
 
 set -e
 
+echo "Installing dotfiles..."
 pushd `dirname $0` >> /dev/null
 DOTFILES_DIR=`pwd -P`
 
 cd $DOTFILES_DIR
 pwd
 
-echo "Installing dotfiles' submodules..."
+echo "Installing submodules..."
 git submodule update --init --recursive
 
 cd "$DOTFILES_DIR/scripts/bin/"
@@ -45,6 +46,7 @@ then
 
     echo ">> Make zsh the default shell? <C-c> to cancel"
     chsh -s $BREW_ZSH
-    exec zsh
-    echo "You should restart your terminal for new shell to take effect!"
 fi
+
+echo "Done"
+echo "You should restart your terminal for new shell to take effect!"

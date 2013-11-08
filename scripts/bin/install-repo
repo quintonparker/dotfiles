@@ -1,5 +1,12 @@
 #!/bin/sh
+
+echo "Installing google's git repo tool"
 cd ~/bin
-wget "http://git-repo.googlecode.com/files/repo-1.19"
+pwd
+
+wget --verbose --no-clobber "http://git-repo.googlecode.com/files/repo-1.19"
 chmod +x repo-1.19
-ln -s repo-1.19 repo
+
+echo "Bin'ifying executable"
+ln -sv repo-1.19 repo
+echo "Done"
