@@ -121,3 +121,5 @@ autocmd FileType php let php_folding=1
 
 " disable auto directory switching
 set noautochdir
+
+source ~/.vimrc_local

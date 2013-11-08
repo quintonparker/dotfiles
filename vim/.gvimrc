@@ -13,3 +13,5 @@ nnoremap <leader>f :maca toggleFileBrowser:<cr>
 " broken in recent builds of macvim splitbrowser :/
 " https://github.com/alloy/macvim/wiki/Usage
 nnoremap <leader>fr :maca revealInFileBrowser:<cr>
+
+source ~/.gvimrc_local
