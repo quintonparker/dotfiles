@@ -79,6 +79,8 @@ nnoremap <leader>p :set paste<CR>
 nnoremap <leader>pp :set nopaste<CR>
 nnoremap <leader>w :%s,\s\+$,,gc<CR>
 nnoremap <leader>ts :%s,\t,    ,gc<CR>
+nnoremap <leader>d :bd<CR>
+nnoremap <leader>dd :bufdo bd<CR>
 
 " edit $MYVIMRC on the fly in any window
 nnoremap <leader>ee :tabnew $MYVIMRC<cr>
