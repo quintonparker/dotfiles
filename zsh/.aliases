@@ -8,6 +8,7 @@ alias hist='history -f -D'
 
 alias x="chmod -v +x"
 alias v="vim"
+alias c="clear"
 
 alias gadd='git add'
 alias gai='git ai'
