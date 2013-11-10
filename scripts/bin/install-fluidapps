@@ -7,7 +7,10 @@ then
     cd ~/Applications/fluid
     pwd
     git checkout master
-    git pull origin master
+    git stash
+    git fetch origin master
+    git rebase origin/master
+    git stash pop
 else
     mkdir -vp ~/Applications
     pwd
