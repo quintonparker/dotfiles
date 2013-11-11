@@ -13,17 +13,14 @@ alias h="cd"
 alias t="tee"
 
 alias gadd='git add'
-alias gai='git ai'
-alias gco='git checkout'
-alias gci='git commit'
+alias gco='git co'
+alias gci='git ci'
+alias grb='git rb'
+alias gbr='git br'
 alias gdi='git diff'
-alias gvidi='git vidiff'
-alias gvimg='git vimerge'
-alias gdiws='git diffws'
 alias gpu='git push'
 alias gpl='git pull'
-alias glg='git log --stat -p'
+alias glg='git lg'
 alias gst='git status'
-alias gsy='git sync'
 
 eval "$(hub alias -s)"

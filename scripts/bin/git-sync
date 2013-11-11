@@ -31,4 +31,6 @@ git diff --minimal $GIT_BRANCH $STAGING_BRANCH
 git checkout $GIT_BRANCH
 git merge $STAGING_BRANCH
 # git branch -d $STAGING_BRANCH # uncomment because this bin is experimental
+echo "Updating submodules (if any)"
+git submodule update --init --recursive
 echo "Done"
