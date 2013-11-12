@@ -63,7 +63,7 @@ set gdefault " applies substitutions globally on lines by default
 
 " START KEY mappings
 
-set timeout timeoutlen=300 ttimeoutlen=100
+set timeout timeoutlen=300 ttimeoutlen=200
 
 " allow bracket matching using tab instead of %
 nnoremap <tab> %
