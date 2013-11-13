@@ -64,7 +64,8 @@ set undofile " enable persistent undo functionality
 set undodir=~/.vim/undodir
 
 " display soft-warning that i'm going beyond 100 columns
-set colorcolumn=101
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
 
 " START KEY mappings
 
