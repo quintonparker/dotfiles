@@ -61,6 +61,7 @@ set list " show sneaky whitespace chars (see vim-sensible's listchars)
 set hlsearch
 set gdefault " applies substitutions globally on lines by default
 set undofile " enable persistent undo functionality
+set undodir=~/.vim/undodir
 
 " START KEY mappings
 

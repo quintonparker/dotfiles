@@ -37,17 +37,17 @@
     path = vim/.vim/bundle/vim-varnish
     url = git@github.com:quintonparker/vim-varnish
 [submodule "vim/.vim/bundle/ack.vim"]
-	path = vim/.vim/bundle/ack.vim
-	url = https://github.com/mileszs/ack.vim
+    path = vim/.vim/bundle/ack.vim
+    url = https://github.com/mileszs/ack.vim
 [submodule "vim/.vim/bundle/vim-filetype-xdebug"]
-	path = vim/.vim/bundle/vim-filetype-xdebug
-	url = git@github.com:dominics/vim-filetype-xdebug.git
+    path = vim/.vim/bundle/vim-filetype-xdebug
+    url = git@github.com:dominics/vim-filetype-xdebug.git
 [submodule "vim/.vim/bundle/vim-json"]
-	path = vim/.vim/bundle/vim-json
-	url = https://github.com/elzr/vim-json
+    path = vim/.vim/bundle/vim-json
+    url = https://github.com/elzr/vim-json
 [submodule "vim/.vim/bundle/vim-surround"]
-	path = vim/.vim/bundle/vim-surround
-	url = https://github.com/tpope/vim-surround
+    path = vim/.vim/bundle/vim-surround
+    url = https://github.com/tpope/vim-surround
 [submodule "vim/.vim/bundle/vim-repeat"]
-	path = vim/.vim/bundle/vim-repeat
-	url = https://github.com/tpope/vim-repeat
+    path = vim/.vim/bundle/vim-repeat
+    url = https://github.com/tpope/vim-repeat

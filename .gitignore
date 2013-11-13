@@ -1,3 +1,4 @@
 vim/.vim/.netrwhist
-zsh/.zsh/cache
+vim/.vim/undodir/*
+zsh/.zsh/cache/*
 scripts/bin/repo*
