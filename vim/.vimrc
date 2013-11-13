@@ -71,8 +71,10 @@ set timeout timeoutlen=400 ttimeoutlen=200
 nnoremap <tab> %
 vnoremap <tab> %
 
-" shortcut to switch off search highlighting
-nnoremap <leader><space> :noh<cr>
+" rm whitespace on line-endings in current buffer
+nnoremap <leader><space> :%s,\s\+$,,gc<CR>
+" replace tabs with 4 spaces in current buffer
+nnoremap <leader><tab> :%s,\t\+,    ,gc<CR>
 
 " save a key hit when saving a file
 nnoremap ; :
@@ -80,17 +82,27 @@ nnoremap ; :
 nnoremap <leader>a :Ack<space>
 nnoremap <leader>g :Ag<space>
 
-nnoremap <leader>tt :TagbarToggle<CR>
+nnoremap <leader>t :TagbarToggle<CR>
+" enter paste mode
 nnoremap <leader>p :set paste<CR>
+" leave paste mode
 nnoremap <leader>pp :set nopaste<CR>
-nnoremap <leader>w :%s,\s\+$,,gc<CR>
-nnoremap <leader><tab> :%s,\t\+,    ,gc<CR>
+" shortcut to switch off search highlighting
+nnoremap <leader>h :noh<cr>
+" delete this buffer
 nnoremap <leader>d :bd<CR>
+" delete all open buffers
 nnoremap <leader>dd :bufdo bd<CR>
+ " clear all lines in the buffer. akin to "clear" in terminal
+nnoremap <leader>c gg dG<CR>
+" list buffers
+nnoremap <leader>b :ls<CR>
+" discard any changes to current buffer
+nnoremap <leader>e :e! %<CR>
 
 " edit $MYVIMRC on the fly in any window
-nnoremap <leader>e :tabnew $MYVIMRC<cr>
-nnoremap <leader>r :so $MYVIMRC<cr>
+nnoremap <leader>ee :tabnew $MYVIMRC<cr>:noh<cr>
+nnoremap <leader>rr :so $MYVIMRC<cr>:noh<cr>
 
 " automatically source vim sessions so I can open them with the finder
 au BufRead *.vis so %
