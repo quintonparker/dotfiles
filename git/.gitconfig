@@ -20,8 +20,8 @@
     rb = rebase
     st = status
     sync = !git-sync
-    vidiff = difftool
-    vimerge = mergetool
+    vdiff = difftool
+    vmerge = mergetool
 [init]
     templatedir = ~/.git_template
 [core]
