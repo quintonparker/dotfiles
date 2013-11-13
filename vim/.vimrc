@@ -60,10 +60,11 @@ set wildmode=list:longest,full
 set list " show sneaky whitespace chars (see vim-sensible's listchars)
 set hlsearch
 set gdefault " applies substitutions globally on lines by default
+set undofile " enable persistent undo functionality
 
 " START KEY mappings
 
-set timeout timeoutlen=300 ttimeoutlen=200
+set timeout timeoutlen=400 ttimeoutlen=200
 
 " allow bracket matching using tab instead of %
 nnoremap <tab> %
