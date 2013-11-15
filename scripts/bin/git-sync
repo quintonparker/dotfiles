@@ -20,10 +20,17 @@ then
     exit 1
 fi
 
-echo "Create staging branch $STAGING_BRANCH"
-git branch $STAGING_BRANCH
 echo "Fetch latest commits from $GIT_REMOTE_URI"
 git fetch $GIT_REMOTE_NAME $GIT_BRANCH
+
+if [[ `git diff $GIT_REMOTE_URI | wc -l | tr -d ' '` == "0" ]]
+then
+    echo "Already up-to-date, bro. Sync exiting..."
+    exit 0
+fi
+
+echo "Create staging branch $STAGING_BRANCH"
+git branch $STAGING_BRANCH
 echo "Replay $STAGING_BRANCH on top of ${GIT_REMOTE_URI}"
 git rebase "${GIT_REMOTE_URI}" $STAGING_BRANCH
 echo "Diff between $GIT_BRANCH and $STAGING_BRANCH"
