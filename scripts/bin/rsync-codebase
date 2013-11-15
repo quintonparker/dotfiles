@@ -1,8 +1,10 @@
 #!/bin/bash
 
+THIS=`basename $0`
+
 if [ $# -lt 2 ]
 then
-    echo "$0 error: Usage $0 <arg1> <arg2> <arg...> <source> <target>"
+    echo "Error: Usage $THIS <arg1> <arg2> <arg...> <source> <target>"
     exit 1
 fi
 

@@ -1,8 +1,10 @@
 #!/bin/bash
 
+THIS=`basename $0`
+
 if [ $# -lt 2 ]
 then
-    echo "$0 error: Usage $0 <path-1> <path-2>"
+    echo "Error: Usage $THIS <path-1> <path-2>"
     exit 1
 fi
 
