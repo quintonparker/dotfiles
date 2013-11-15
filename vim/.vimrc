@@ -116,7 +116,7 @@ nnoremap <leader>ee :tabnew $MYVIMRC<cr>:noh<cr>
 nnoremap <leader>rr :so $MYVIMRC<cr>:noh<cr>
 
 " visual select all shortcut
-nnoremap == 1G v G $<cr>
+nnoremap == ggVG$<cr>
 
 " automatically source vim sessions so I can open them with the finder
 au BufRead *.vis so %
