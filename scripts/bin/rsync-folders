@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ $# -lt 2 ]
+then
+    echo "$0 error: Usage $0 <arg1> <arg2> <arg...> <source> <target>"
+    exit 1
+fi
+
+rsync --whole-file --executability --exclude="*.git" --exclude="etc/app/config.php" --delete --verbose --inplace --cvs-exclude --checksum --recursive --human-readable $@
