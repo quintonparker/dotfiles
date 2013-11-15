@@ -22,6 +22,7 @@
     sync = !git-sync
     vdiff = difftool
     vmerge = mergetool
+    rhh = reset HEAD --hard
 [init]
     templatedir = ~/.git_template
 [core]
