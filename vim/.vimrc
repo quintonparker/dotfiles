@@ -115,6 +115,9 @@ nnoremap <leader>p8 :!pep8 --ignore=E501 %<CR>
 nnoremap <leader>ee :tabnew $MYVIMRC<cr>:noh<cr>
 nnoremap <leader>rr :so $MYVIMRC<cr>:noh<cr>
 
+" visual select all shortcut
+nnoremap == 1G v G $<cr>
+
 " automatically source vim sessions so I can open them with the finder
 au BufRead *.vis so %
 " save sessions with .vis extension
@@ -150,5 +153,14 @@ autocmd FileType php let php_folding=1
 
 " disable auto directory switching
 set noautochdir
+
+" damien conway's simultaneous edit preventer
+augroup NoSimultaneousEdits
+    autocmd!
+    autocmd SwapExists * let v:swapchoice = 'o'
+    autocmd SwapExists * echo 'Duplicate edit session (readonly)'
+    autocmd SwapExists * echohl None
+    autocmd SwapExists * sleep 1
+augroup END
 
 source ~/.vimrc_local
