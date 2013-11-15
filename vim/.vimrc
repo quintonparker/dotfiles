@@ -21,6 +21,9 @@ let g:syntastic_auto_loc_list=1
 let g:syntastic_quiet_warnings=1
 nmap <c-s> :SyntasticCheck<CR>
 
+let g:syntastic_python_flake8_args='--ignore=E501'
+let g:syntastic_python_pep8_args='--ignore=E501'
+
 " ctrlp.vim settings
 let g:ctrlp_cmd='CtrlPMixed'
 let g:ctrlp_working_path_mode=0
@@ -105,8 +108,8 @@ nnoremap <leader>b :ls<CR>
 nnoremap <leader>e :e! %<CR>
 
 " python tools
-nnoremap <leader>f8 :!flake8 %<CR>
-nnoremap <leader>p8 :!pep8 %<CR>
+nnoremap <leader>f8 :!flake8 --ignore=E501 %<CR>
+nnoremap <leader>p8 :!pep8 --ignore=E501 %<CR>
 
 " edit $MYVIMRC on the fly in any window
 nnoremap <leader>ee :tabnew $MYVIMRC<cr>:noh<cr>
