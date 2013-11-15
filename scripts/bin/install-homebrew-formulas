@@ -32,11 +32,18 @@ brew install --verbose gnu-sed
 brew install --verbose --HEAD hub
 brew install --verbose libtool
 brew install --verbose libyaml
-brew install --verbose lighttpd
 
 brew install --verbose --override-system-vi vim
 brew tap joelcogen/macvimsplitbrowser
 brew install --verbose macvim-split-browser
+
+brew install --verbose python
+brew install --verbose pyenv-virtualenv
+
+# these usually required for pip deps
+brew install mysql --verbose --enable-local-infile --enable-memcached --with-archive-storage-engine --with-blackhole-storage-engine
+# usually needed for python gevent
+brew install libevent
 
 brew install --verbose ncurses
 brew install --verbose ntfs-3g
@@ -45,7 +52,6 @@ brew install --verbose pcre
 brew install --verbose pkg-config
 brew install --verbose pv
 brew install --verbose readline
-brew install --verbose sqlite
 brew install --verbose stow
 brew install --verbose the_silver_searcher
 brew install --verbose tig
