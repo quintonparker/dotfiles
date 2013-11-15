@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ $# -lt 2 ]
+then
+    echo "$0 error: Usage $0 <path-1> <path-2>"
+    exit 1
+fi
+
+diff --recursive --side-by-side --suppress-common-lines --ignore-all-space $@
