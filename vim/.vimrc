@@ -104,6 +104,10 @@ nnoremap <leader>b :ls<CR>
 " discard any changes to current buffer
 nnoremap <leader>e :e! %<CR>
 
+" python tools
+nnoremap <leader>f8 :!flake8 %<CR>
+nnoremap <leader>p8 :!pep8 %<CR>
+
 " edit $MYVIMRC on the fly in any window
 nnoremap <leader>ee :tabnew $MYVIMRC<cr>:noh<cr>
 nnoremap <leader>rr :so $MYVIMRC<cr>:noh<cr>
