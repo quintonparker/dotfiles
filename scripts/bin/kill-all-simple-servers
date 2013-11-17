@@ -1,0 +1,3 @@
+#!/bin/sh
+
+ps x -U $USER | grep SimpleHTTPServer | grep -v "grep" | awk '{print $1}' | while read p; do kill $p; done
