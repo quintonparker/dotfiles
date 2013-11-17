@@ -12,6 +12,7 @@
 [alias]
     ai = add --interactive
     br = branch
+    c = clean -f -d
     co = checkout
     ci = commit --verbose
     ctags = !.git/hooks/ctags
