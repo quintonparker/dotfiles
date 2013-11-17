@@ -53,6 +53,7 @@ brew install --verbose pkg-config
 brew install --verbose pv
 brew install --verbose readline
 brew install --verbose stow
+brew install --verbose terminal-notifier
 brew install --verbose the_silver_searcher
 brew install --verbose tig
 brew install --verbose wget
