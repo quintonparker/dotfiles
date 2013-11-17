@@ -28,6 +28,7 @@ brew install --verbose gdbm
 brew install --verbose gettext
 brew install --verbose --with-blk-sha1 --with-pcre --with-gettext --without-completions git
 brew install --verbose gnu-sed
+brew install --verbose jq
 # workaround for hub completion bug https://github.com/github/hub/issues/231
 brew install --verbose --HEAD hub
 brew install --verbose libtool
@@ -56,11 +57,11 @@ brew install --verbose stow
 brew install --verbose terminal-notifier
 brew install --verbose the_silver_searcher
 brew install --verbose tig
+brew install --verbose watch
 brew install --verbose wget
 brew install --verbose xz
 # dont forget to follow brew post-install --verbose instructions. brew info zsh
 brew install --verbose --disable-etcdir zsh
 brew install --verbose zsh-completions
-brew install --verbose jq
 
 exit 0
