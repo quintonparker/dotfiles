@@ -42,9 +42,6 @@
 [submodule "vim/.vim/bundle/vim-filetype-xdebug"]
     path = vim/.vim/bundle/vim-filetype-xdebug
     url = git@github.com:dominics/vim-filetype-xdebug.git
-[submodule "vim/.vim/bundle/vim-json"]
-    path = vim/.vim/bundle/vim-json
-    url = https://github.com/elzr/vim-json
 [submodule "vim/.vim/bundle/vim-surround"]
     path = vim/.vim/bundle/vim-surround
     url = https://github.com/tpope/vim-surround
