@@ -14,4 +14,6 @@ nnoremap <leader>f :maca toggleFileBrowser:<cr>
 " https://github.com/alloy/macvim/wiki/Usage
 " nnoremap <leader>fr :maca revealInFileBrowser:<cr>
 
+set guioptions-=T
+
 source ~/.gvimrc_local
