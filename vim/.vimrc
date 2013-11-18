@@ -155,12 +155,12 @@ autocmd FileType php let php_folding=1
 set noautochdir
 
 " damien conway's simultaneous edit preventer
-augroup NoSimultaneousEdits
-    autocmd!
-    autocmd SwapExists * let v:swapchoice = 'o'
-    autocmd SwapExists * echo 'Duplicate edit session (readonly)'
-    autocmd SwapExists * echohl None
-    autocmd SwapExists * sleep 1
-augroup END
+" augroup NoSimultaneousEdits
+    " autocmd!
+    " autocmd SwapExists * let v:swapchoice = 'o'
+    " autocmd SwapExists * echo 'Duplicate edit session (readonly)'
+    " autocmd SwapExists * echohl None
+    " autocmd SwapExists * sleep 1
+" augroup END
 
 source ~/.vimrc_local
