@@ -11,6 +11,7 @@ alias v="vim"
 alias c="clear"
 alias h="cd"
 alias t="tee"
+alias p="pwd"
 
 alias gadd='git add'
 alias gco='git co'
