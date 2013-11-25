@@ -1,5 +1,4 @@
 alias ls='ls -G'
-alias ll='ls -lt'
 alias grep='grep --colour=always'
 alias ack='ack --colour'
 alias less='less -r'
@@ -12,6 +11,7 @@ alias c="clear"
 alias h="cd"
 alias t="tee"
 alias p="pwd"
+alias l='ls -lta'
 
 alias gadd='git add'
 alias gco='git co'
