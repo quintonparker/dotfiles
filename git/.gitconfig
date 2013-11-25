@@ -20,7 +20,7 @@
     lg = log --stat --patch
     rb = rebase
     st = status
-    sync = !git-sync
+    sync = !git-sync.sh
     vdiff = difftool
     vmerge = mergetool
     rhh = reset HEAD --hard
