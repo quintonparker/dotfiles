@@ -48,3 +48,6 @@
 [submodule "vim/.vim/bundle/vim-repeat"]
     path = vim/.vim/bundle/vim-repeat
     url = https://github.com/tpope/vim-repeat
+[submodule "vim/.vim/bundle/vim-unimpaired"]
+	path = vim/.vim/bundle/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired
