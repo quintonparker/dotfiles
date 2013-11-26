@@ -72,7 +72,7 @@ call matchadd('ColorColumn', '\%81v', 100)
 
 " START KEY mappings
 
-set timeout timeoutlen=400 ttimeoutlen=200
+set timeout timeoutlen=400 ttimeoutlen=400
 
 " allow bracket matching using tab instead of %
 nnoremap <tab> %
