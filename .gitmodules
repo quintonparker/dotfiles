@@ -38,16 +38,16 @@
     url = git@github.com:quintonparker/vim-varnish
 [submodule "vim/.vim/bundle/ack.vim"]
     path = vim/.vim/bundle/ack.vim
-    url = https://github.com/mileszs/ack.vim
+    url = git@github.com:mileszs/ack.vim.git
 [submodule "vim/.vim/bundle/vim-filetype-xdebug"]
     path = vim/.vim/bundle/vim-filetype-xdebug
     url = git@github.com:dominics/vim-filetype-xdebug.git
 [submodule "vim/.vim/bundle/vim-surround"]
     path = vim/.vim/bundle/vim-surround
-    url = https://github.com/tpope/vim-surround
+    url = git@github.com:tpope/vim-surround.git
 [submodule "vim/.vim/bundle/vim-repeat"]
     path = vim/.vim/bundle/vim-repeat
-    url = https://github.com/tpope/vim-repeat
+    url = git@github.com:tpope/vim-repeat
 [submodule "vim/.vim/bundle/vim-unimpaired"]
 	path = vim/.vim/bundle/vim-unimpaired
-	url = https://github.com/tpope/vim-unimpaired
+	url = git@github.com:tpope/vim-unimpaired
