@@ -15,7 +15,7 @@ git submodule update --init --recursive
 cd "$DOTFILES_DIR/scripts/bin/"
 pwd
 
-./install-homebrew
+./install-homebrew.sh
 
 echo "Installing gnu stow (dotfile deploy tool)..."
 brew install stow
@@ -26,11 +26,11 @@ stow --ignore="\.DS_Store" -d $DOTFILES_DIR -t $HOME -v 1 -S zsh -S vim -S git -
 cd "$DOTFILES_DIR/scripts/bin/"
 pwd
 
-./install-homebrew-formulas
-./install-monaco-font
-./install-vim-plugins
-./osx-set-defaults
-./zsh-set-as-default
-./zsh-cache-nuke
+./install-homebrew-formulas.sh
+./install-monaco-font.sh
+./install-vim-plugins.sh
+./osx-set-defaults.sh
+./zsh-set-as-default.sh
+./zsh-cache-nuke.sh
 
 echo "All done. You should restart your terminal for new shell to take effect!"

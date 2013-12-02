@@ -3,7 +3,7 @@
 set -e
 
 echo "Installing vim plugins"
-cd ~/.vim
+cd ~/dotfiles
 pwd
 
 git submodule update --init --recursive
