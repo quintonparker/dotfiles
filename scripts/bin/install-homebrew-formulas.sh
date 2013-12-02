@@ -60,6 +60,8 @@ brew install --verbose tig
 brew install --verbose watch
 brew install --verbose wget
 brew install --verbose xz
+
+brew install --verbose ssh-copy-id
 # dont forget to follow brew post-install --verbose instructions. brew info zsh
 brew install --verbose --disable-etcdir zsh
 brew install --verbose zsh-completions
