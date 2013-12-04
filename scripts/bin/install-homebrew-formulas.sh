@@ -19,6 +19,7 @@ fi
 
 brew install --verbose autoconf
 brew install --verbose automake
+brew install --verbose ack
 brew install --verbose ctags
 brew install --verbose curl-ca-bundle
 brew install --verbose dos2unix
