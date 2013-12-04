@@ -24,4 +24,7 @@ alias gpl='git pull'
 alias glg='git lg'
 alias gst='git status'
 
-eval "$(hub alias -s)"
+if [[ `which hub` != "hub not found" ]]
+then
+    eval "$(hub alias -s)"
+fi
