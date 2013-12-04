@@ -1,0 +1,33 @@
+
+function proxy() {
+    if [[ $# -lt 1 ]]
+    then
+        echo "Usage:  proxy mahproxy.com:8080 [username] [password]"
+        return
+    fi
+
+    if [[ $# -eq 3 ]]
+    then
+        export http_proxy="http://$2:$3@$1/"
+    else
+        export http_proxy="http://$1/"
+    fi
+
+    export https_proxy=$http_proxy
+    export ftp_proxy=$http_proxy
+    export rsync_proxy=$http_proxy
+    export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
+    echo -e "\nProxy environment variable set."
+}
+
+function proxyoff() {
+    unset HTTP_PROXY
+    unset http_proxy
+    unset HTTPS_PROXY
+    unset https_proxy
+    unset FTP_PROXY
+    unset ftp_proxy
+    unset RSYNC_PROXY
+    unset rsync_proxy
+    echo -e "\nProxy environment variable removed."
+}
