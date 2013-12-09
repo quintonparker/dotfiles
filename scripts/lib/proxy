@@ -17,7 +17,6 @@ function proxy() {
     export ftp_proxy=$http_proxy
     export rsync_proxy=$http_proxy
     export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com,.local,.dev"
-    echo -e "\nProxy environment variable set."
 }
 
 function proxyoff() {
@@ -29,5 +28,4 @@ function proxyoff() {
     unset ftp_proxy
     unset RSYNC_PROXY
     unset rsync_proxy
-    echo -e "\nProxy environment variable removed."
 }
