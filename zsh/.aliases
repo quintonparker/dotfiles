@@ -2,7 +2,8 @@ alias ls='ls -G'
 alias grep='grep --colour=always'
 alias ack='ack --colour'
 alias less='less -r'
-alias diffsbs='diff --recursive --side-by-side --suppress-common-lines'
+alias diffsbs='diff --recursive --side-by-side --suppress-common-lines --speed-large-files'
+alias diffsbsws='diffsbs --strip-trailing-cr --ignore-blank-lines --ignore-all-space'
 alias hist='history -f -D'
 
 alias x="chmod -v +x"
