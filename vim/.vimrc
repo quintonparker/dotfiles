@@ -81,7 +81,7 @@ vnoremap <tab> %
 " rm whitespace on line-endings in current buffer
 nnoremap <leader><space> :%s,\s\+$,,gc<CR>
 " replace tabs with 4 spaces in current buffer
-nnoremap <leader><tab> :%s,\t\+,    ,gc<CR>
+nnoremap <leader><tab> :retab<CR>
 
 " save a key hit when saving a file
 nnoremap ; :
