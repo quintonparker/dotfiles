@@ -29,3 +29,7 @@ function proxyoff() {
     unset RSYNC_PROXY
     unset rsync_proxy
 }
+
+function proxystatus() {
+    env | grep -i proxy
+}
