@@ -8,7 +8,14 @@ date
 NEW_UUID=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
 
 GIT_BRANCH=`git branch --no-color | grep --color=never -E "\*\s+.*" | tr -d "* "`
-GIT_REMOTE_NAME=`git remote | head -n1`
+
+if [[ $2 == "" ]]
+then
+    GIT_REMOTE_NAME='origin'
+else
+    GIT_REMOTE_NAME=$2
+fi
+
 GIT_REMOTE_URI="${GIT_REMOTE_NAME}/${GIT_BRANCH}"
 STAGING_BRANCH="sync-${NEW_UUID}"
 MODIFIED_FILES=`git status --short --porcelain -uno | wc -l | tr -d ' '`
@@ -36,8 +43,9 @@ git rebase "${GIT_REMOTE_URI}" $STAGING_BRANCH
 echo "Diff between $GIT_BRANCH and $STAGING_BRANCH"
 git diff --minimal $GIT_BRANCH $STAGING_BRANCH
 git checkout $GIT_BRANCH
-git merge $STAGING_BRANCH
-# git branch -d $STAGING_BRANCH # uncomment because this bin is experimental
+git rebase $STAGING_BRANCH
 echo "Updating submodules (if any)"
 git submodule update --init --recursive
+
+git branch -D -v $STAGING_BRANCH
 echo "Done"
