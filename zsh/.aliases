@@ -27,6 +27,8 @@ alias gst='git status'
 
 alias sed='gsed'
 
+alias mysql='mysql --auto-vertical-output --show-warnings'
+
 if [[ `which hub` != "hub not found" ]]
 then
     eval "$(hub alias -s)"
