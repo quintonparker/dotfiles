@@ -74,3 +74,5 @@ fi
 
 # bin aliases
 source $HOME/.aliases
+
+source $HOME/lib/git
