@@ -27,7 +27,13 @@ alias gst='git status'
 
 alias sed='gsed'
 
-alias mysql='mysql --auto-vertical-output --show-warnings'
+alias pgrep='pgrep -ali'
+alias watch='watch --differences'
+
+alias mysql='mysql --auto-vertical-output --show-warnings --prompt="\U:\d> "'
+
+alias php-profile='php -d xdebug.profiler_enable=1'
+alias php-trace='php -d xdebug.auto_trace=1'
 
 if [[ `which hub` != "hub not found" ]]
 then
