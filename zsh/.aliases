@@ -29,6 +29,7 @@ alias sed='gsed'
 
 alias pgrep='pgrep -ali'
 alias watch='watch --differences'
+alias which='which -a'
 
 alias mysql='mysql --auto-vertical-output --show-warnings --prompt="\U:\d> "'
 
