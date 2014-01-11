@@ -16,6 +16,7 @@ cd "$DOTFILES_DIR/scripts/bin/"
 pwd
 
 ./install-homebrew.sh
+./install-homebrew-cask.sh
 
 echo "Installing gnu stow (dotfile deploy tool)..."
 brew install stow
@@ -27,7 +28,7 @@ cd "$DOTFILES_DIR/scripts/bin/"
 pwd
 
 ./install-homebrew-formulas.sh
-./install-homebrew-cask.sh
+./install-homebrew-cask-formulas.sh
 ./install-quick-look-plugins.sh
 
 ./install-monaco-font.sh
