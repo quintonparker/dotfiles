@@ -40,6 +40,6 @@
 [push]
     default = simple
 [branch]
-	autosetuprebase = always
+    autosetuprebase = always
 [pull]
-	rebase = preserve
+    rebase = preserve
