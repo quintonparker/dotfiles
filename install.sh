@@ -27,8 +27,12 @@ cd "$DOTFILES_DIR/scripts/bin/"
 pwd
 
 ./install-homebrew-formulas.sh
+./install-homebrew-cask.sh
+./install-quick-look-plugins.sh
+
 ./install-monaco-font.sh
 ./install-vim-plugins.sh
+
 ./osx-set-defaults.sh
 ./zsh-set-as-default.sh
 ./zsh-cache-nuke.sh
