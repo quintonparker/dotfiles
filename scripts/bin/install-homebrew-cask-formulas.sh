@@ -11,6 +11,7 @@ brew cask install fluid
 brew cask install flux
 brew cask install google-chrome
 brew cask install iterm2
+brew cask install java
 brew cask install kindle
 brew cask install knock
 brew cask install sizeup
