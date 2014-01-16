@@ -14,7 +14,11 @@ brew cask install java
 brew cask install kindle
 brew cask install knock
 brew cask install mysql-workbench
+brew cask install selfcontrol
 brew cask install sizeup
+brew cask install skype
+brew cask install teamviz
 brew cask install vagrant
 brew cask install virtualbox
+brew cask install vlc
 brew cask install wunderlist
