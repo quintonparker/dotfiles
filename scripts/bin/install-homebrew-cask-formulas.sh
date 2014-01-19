@@ -15,6 +15,7 @@ brew cask install kindle
 brew cask install knock
 brew cask install mysql-workbench
 brew cask install selfcontrol
+brew cask install sequel-pro
 brew cask install sizeup
 brew cask install skype
 brew cask install teamviz
