@@ -28,10 +28,11 @@ let g:syntastic_python_pep8_args='--ignore=E501'
 let g:ctrlp_cmd='CtrlPMixed'
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_clear_cache_on_exit=0
-let g:ctrlp_dotfiles=0
+let g:ctrlp_dotfiles=1
 let g:ctrlp_user_command=['.git/', 'cd %s && git ls-files']
 let g:ctrlp_open_new_file='t'
 let g:ctrlp_open_multiple_files='t'
+let g:ctrlp_max_files = 0
 
 " snipmate settings
 autocmd BufNewFile,BufRead *.phtml  set ft=php.html.js.css
@@ -150,6 +151,9 @@ autocmd FileType php let php_sql_query=1
 autocmd FileType php let php_htmlInStrings=1
 autocmd FileType php let php_noShortTags=0
 autocmd FileType php let php_folding=1
+
+" close some folds but not all
+set foldlevelstart=1
 
 " disable auto directory switching
 set noautochdir
