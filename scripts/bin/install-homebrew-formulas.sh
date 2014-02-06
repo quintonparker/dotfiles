@@ -54,10 +54,12 @@ brew install --verbose pcre
 brew install --verbose pkg-config
 brew install --verbose pv
 brew install --verbose readline
+brew install --verbose siege
 brew install --verbose stow
 brew install --verbose terminal-notifier
 brew install --verbose the_silver_searcher
 brew install --verbose tig
+brew install --verbose varnish
 brew install --verbose watch
 brew install --verbose wget
 brew install --verbose xz
