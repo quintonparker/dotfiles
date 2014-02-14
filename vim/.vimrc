@@ -31,7 +31,7 @@ let g:ctrlp_clear_cache_on_exit=0
 let g:ctrlp_dotfiles=1
 let g:ctrlp_user_command=['.git/', 'cd %s && git ls-files']
 let g:ctrlp_open_new_file='t'
-let g:ctrlp_open_multiple_files='t'
+let g:ctrlp_open_multiple_files='tj'
 let g:ctrlp_max_files = 0
 
 " snipmate settings
