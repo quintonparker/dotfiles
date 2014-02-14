@@ -107,6 +107,9 @@ nnoremap <leader>c gg dG<CR>
 nnoremap <leader>b :ls<CR>
 " discard any changes to current buffer
 nnoremap <leader>e :e! %<CR>
+" bring up netwrw!
+nnoremap <leader>x :Explore<CR>
+
 
 " python tools
 nnoremap <leader>f8 :!flake8 --ignore=E501 %<CR>
