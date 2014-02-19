@@ -17,6 +17,7 @@ brew cask install mysql-workbench
 brew cask install selfcontrol
 brew cask install sequel-pro
 brew cask install sizeup
+brew cask install slowy
 brew cask install skype
 brew cask install teamviz
 brew cask install vagrant
