@@ -42,6 +42,7 @@ brew install --verbose macvim-split-browser
 brew install --verbose nodejs
 brew install --verbose npm
 
+brew install --verbose php-cs-fixer
 brew install --verbose python
 brew install --verbose pyenv-virtualenv
 
