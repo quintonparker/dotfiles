@@ -51,3 +51,6 @@
 [submodule "vim/.vim/bundle/vim-unimpaired"]
 	path = vim/.vim/bundle/vim-unimpaired
 	url = git@github.com:tpope/vim-unimpaired
+[submodule "vim/.vim/bundle/php-cs-fixer"]
+	path = vim/.vim/bundle/php-cs-fixer
+	url = git@github.com:stephpy/vim-php-cs-fixer.git

@@ -110,10 +110,6 @@ nnoremap <leader>e :e! %<CR>
 " bring up netwrw!
 nnoremap <leader>x :Explore<CR>
 
-" invoke php-cs-fixer assuming it's installed
-nnoremap <leader>pcd :!php-cs-fixer fix %<CR>
-
-
 " python tools
 nnoremap <leader>f8 :!flake8 --ignore=E501 %<CR>
 nnoremap <leader>p8 :!pep8 --ignore=E501 %<CR>
