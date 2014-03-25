@@ -8,4 +8,4 @@ then
     exit 1
 fi
 
-rsync --whole-file --executability --exclude="*.git" --exclude="etc/app/config.php" --exclude="*.swp" --delete --verbose --inplace --cvs-exclude --checksum --recursive --human-readable $@
+rsync --whole-file --executability --exclude="*.git" --exclude="etc/app/config.php" --exclude="*.swp" --exclude=".DS_Store" --exclude=".vagrant" --delete --verbose --inplace --cvs-exclude --checksum --recursive --human-readable $@
