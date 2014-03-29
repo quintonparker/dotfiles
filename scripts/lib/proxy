@@ -19,6 +19,16 @@ function proxy() {
     export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com,.local,.dev"
 }
 
+proxyprompt() {
+    protocols=()
+    [[ -n $http_proxy ]] && protocols+="http"
+    [[ -n $https_proxy ]] && protocols+="https"
+    [[ -n $rsync_proxy ]] && protocols+="rsync"
+    [[ -n $ftp_proxy ]] && protocols+="ftp"
+
+    [[ ${#protocols} -gt 0 ]] && echo "(${(j:/:)protocols} via proxy)"
+}
+
 function proxyoff() {
     unset HTTP_PROXY
     unset http_proxy
