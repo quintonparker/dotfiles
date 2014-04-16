@@ -4,6 +4,7 @@ echo "Installing homebrew cask formulas"
 
 # todo add plain cloud to cask formulas
 brew cask install caffeine
+brew cask install calibre
 brew cask install cloudapp
 brew cask install dropbox
 brew cask install firefox
