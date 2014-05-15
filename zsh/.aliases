@@ -13,7 +13,7 @@ alias c="clear"
 alias h="cd"
 alias t="tee"
 alias p="pwd"
-alias l='ls -lta'
+alias l='ls -ltah'
 
 alias gadd='git add'
 alias gco='git co'
