@@ -14,6 +14,7 @@ alias h="cd"
 alias t="tee"
 alias p="pwd"
 alias l='ls -ltah'
+alias f='mdfind'
 
 alias gadd='git add'
 alias gco='git co'
