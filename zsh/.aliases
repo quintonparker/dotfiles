@@ -13,7 +13,7 @@ alias c="clear"
 alias h="cd"
 alias t="tee"
 alias p="pwd"
-alias l='ls -ltah'
+alias l='ls -ltaho'
 alias f='mdfind'
 
 alias gadd='git add'
