@@ -4856,6 +4856,8 @@
 	<false/>
 	<key>HideActivityIndicator</key>
 	<false/>
+	<key>HideMenuBarInFullscreen</key>
+	<true/>
 	<key>HideScrollbar</key>
 	<false/>
 	<key>HideTab</key>
@@ -4887,9 +4889,9 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/iTerm2-Color-Schemes/schemes</string>
+	<string>~/dotfiles/osx/iTerm</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{1057, 595}</string>
+	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -4913,24 +4915,18 @@
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
-	<key>NSWindow Frame NSFontPanel</key>
-	<string>1409 84 445 270 0 0 1920 1058 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>142 535 605 485 0 0 1920 1058 </string>
+	<string>356 167 605 485 0 0 1280 778 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>448 498 384 129 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 129 1702 929 0 0 1920 1058 </string>
+	<string>0 224 745 551 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 484 730 551 0 0 1920 1058 </string>
+	<string>0 225 745 551 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>296 227 730 551 0 0 1280 778 </string>
+	<string>173 227 745 551 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>317 227 730 551 0 0 1280 778 </string>
-	<key>NSWindow Frame iTerm Window 4</key>
-	<string>338 227 730 551 0 0 1280 778 </string>
-	<key>NSWindow Frame iTerm Window 5</key>
-	<string>359 227 730 551 0 0 1280 778 </string>
-	<key>NSWindow Frame iTerm Window 6</key>
-	<string>380 227 730 551 0 0 1280 778 </string>
+	<string>236 227 745 551 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -5376,17 +5372,17 @@
 			<key>Log Directory</key>
 			<string></string>
 			<key>Minimum Contrast</key>
-			<real>0.0</real>
+			<real>0.37929686903953552</real>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 15</string>
+			<string>MonacoForPowerline 15</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Monaco 15</string>
+			<string>MonacoForPowerline 15</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -5607,7 +5603,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>~/dotfiles/osx/iTerm</string>
+	<string>/Users/quinton.parker/dotfiles/osx/iTerm</string>
 	<key>PromptOnClose</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -5625,7 +5621,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-09-02T13:24:24Z</date>
+	<date>2014-05-27T19:15:13Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -5678,6 +5674,6 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>1.0.0.20130624</string>
+	<string>1.0.0.20140518</string>
 </dict>
 </plist>
