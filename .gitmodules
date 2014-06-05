@@ -57,3 +57,6 @@
 [submodule "vim/.vim/bundle/velocity.vim"]
 	path = vim/.vim/bundle/velocity.vim
 	url = https://github.com/lepture/vim-velocity.git
+[submodule "vim/.vim/bundle/nerdtree"]
+	path = vim/.vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
