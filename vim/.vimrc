@@ -40,6 +40,7 @@ autocmd BufNewFile,BufRead *.phtml  set ft=php.html.js.css
 " nerdtree settings
 map <C-n> :NERDTreeToggle<CR>
 autocmd vimenter * NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " varnish vcl syntax highlighting
 so ~/.vim/bundle/vim-varnish/ftdetect/vcl.vim
