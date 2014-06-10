@@ -37,11 +37,6 @@ let g:ctrlp_max_files = 0
 " snipmate settings
 autocmd BufNewFile,BufRead *.phtml  set ft=php.html.js.css
 
-" nerdtree settings
-map <C-n> :NERDTreeToggle<CR>
-autocmd vimenter * NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-
 " varnish vcl syntax highlighting
 so ~/.vim/bundle/vim-varnish/ftdetect/vcl.vim
 au! Syntax vcl source ~/.vim/bundle/vim-varnish/syntax/vcl.vim
