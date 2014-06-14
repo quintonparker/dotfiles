@@ -18,7 +18,7 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=1
-let g:syntastic_quiet_warnings=1
+let g:syntastic_quiet_messages = {'level': 'warnings'}
 nmap <c-s> :SyntasticCheck<CR>
 
 let g:syntastic_python_flake8_args='--ignore=E501'
