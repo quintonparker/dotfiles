@@ -1,6 +1,6 @@
 alias ls='ls -G'
-alias grep='grep --colour=always'
-alias zgrep='zgrep --colour=always'
+alias grep='grep --colour=auto'
+alias zgrep='zgrep --colour=auto'
 alias ack='ack --colour'
 alias less='less -R'
 alias diffsbs='diff --recursive --side-by-side --suppress-common-lines --speed-large-files'

@@ -1,7 +1,6 @@
 # https://wiki.gentoo.org/wiki/Zsh/HOWTO
 # https://wiki.archlinux.org/index.php/Zsh#Simple_.zshrc
 
-
 #completions
 #auto-complete 3rd party bins
 if [[ -d /usr/local/share/zsh-completions ]]
@@ -74,5 +73,6 @@ fi
 
 # bin aliases
 source $HOME/.aliases
-
 source $HOME/lib/git
+
+. $HOME/.npm-completion
