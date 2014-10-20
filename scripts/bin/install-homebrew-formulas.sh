@@ -36,6 +36,7 @@ brew install --verbose libtool
 brew install --verbose libyaml
 
 brew install --verbose --override-system-vi vim
+brew install --verbose macvim
 
 brew install --verbose nodejs
 brew install --verbose npm
