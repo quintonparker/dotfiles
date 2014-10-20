@@ -56,6 +56,7 @@ fi
 
 touch $HOME/.vimrc_local
 ./install-vim-plugins.sh
+mkdir -p ~/.vim/undodir
 
 ./zsh-cache-nuke.sh
 
