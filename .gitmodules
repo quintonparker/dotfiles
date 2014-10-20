@@ -49,11 +49,12 @@
     path = vim/.vim/bundle/vim-repeat
     url = git@github.com:tpope/vim-repeat
 [submodule "vim/.vim/bundle/vim-unimpaired"]
-	path = vim/.vim/bundle/vim-unimpaired
-	url = git@github.com:tpope/vim-unimpaired
+    path = vim/.vim/bundle/vim-unimpaired
+    url = git@github.com:tpope/vim-unimpaired
 [submodule "vim/.vim/bundle/php-cs-fixer"]
-	path = vim/.vim/bundle/php-cs-fixer
-	url = git@github.com:stephpy/vim-php-cs-fixer.git
+    path = vim/.vim/bundle/php-cs-fixer
+    url = git@github.com:stephpy/vim-php-cs-fixer.git
+    ignore = untracked
 [submodule "vim/.vim/bundle/dustjs"]
-	path = vim/.vim/bundle/dustjs
-	url = git://github.com/jimmyhchan/dustjs.vim.git
+    path = vim/.vim/bundle/dustjs
+    url = git://github.com/jimmyhchan/dustjs.vim.git
