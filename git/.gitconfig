@@ -17,12 +17,12 @@
     ci = commit --verbose
     ctags = !.git/hooks/ctags
     diffws = "diff --ignore-space-at-eol --ignore-space-change --ignore-all-space --ignore-blank-lines"
+    diffv = difftool
+    mergev = mergetool
     lg = log --stat --patch
     rb = rebase
     st = status
     sync = !~/bin/git-sync.sh $@
-    vdiff = difftool
-    vmerge = mergetool
     rh = reset HEAD
     rhh = reset HEAD --hard
 [init]
