@@ -12,62 +12,62 @@ echo "Installing homebrew formulas"
 # Check for Homebrew
 if test ! $(which brew)
 then
-  echo "  x You should probably install --verbose Homebrew first:"
-  echo "    https://github.com/mxcl/homebrew/wiki/install --verboseation"
+  echo "  x You should probably install Homebrew first:"
+  echo "    https://github.com/mxcl/homebrew/wiki/install"
   exit
 fi
 
-brew install --verbose autoconf
-brew install --verbose automake
-brew install --verbose ack
-brew install --verbose ctags
-brew install --verbose curl-ca-bundle
-brew install --verbose dos2unix
-brew install --verbose fuse4x
-brew install --verbose fuse4x-kext
-brew install --verbose gdbm
-brew install --verbose gettext
-brew install --verbose --with-blk-sha1 --with-pcre --with-gettext --without-completions git
-brew install --verbose gnu-sed
-brew install --verbose jq
+brew install autoconf
+brew install automake
+brew install ack
+brew install ctags
+brew install curl-ca-bundle
+brew install dos2unix
+brew install fuse4x
+brew install fuse4x-kext
+brew install gdbm
+brew install gettext
+brew install --with-blk-sha1 --with-pcre --with-gettext --without-completions git
+brew install gnu-sed
+brew install jq
 # workaround for hub completion bug https://github.com/github/hub/issues/231
-brew install --verbose --HEAD hub
-brew install --verbose libtool
-brew install --verbose libyaml
+brew install --HEAD hub
+brew install libtool
+brew install libyaml
 
-brew install --verbose --override-system-vi vim
-brew install --verbose macvim
+brew install --override-system-vi vim
+brew install macvim
 
-brew install --verbose nodejs
-brew install --verbose npm
+brew install nodejs
+brew install npm
 
-brew install --verbose php-cs-fixer
-brew install --verbose python
-brew install --verbose pyenv-virtualenv
+brew install php-cs-fixer
+brew install python
+brew install pyenv-virtualenv
 
 # these usually required for pip deps
 # usually needed for python gevent
 brew install libevent
 
-brew install --verbose ncurses
-brew install --verbose ntfs-3g
-brew install --verbose openssl
-brew install --verbose pcre
-brew install --verbose pkg-config
-brew install --verbose pv
-brew install --verbose readline
-brew install --verbose siege
-brew install --verbose stow
-brew install --verbose terminal-notifier
-brew install --verbose the_silver_searcher
-brew install --verbose tig
-brew install --verbose watch
-brew install --verbose wget
-brew install --verbose xz
+brew install ncurses
+brew install ntfs-3g
+brew install openssl
+brew install pcre
+brew install pkg-config
+brew install pv
+brew install readline
+brew install siege
+brew install stow
+brew install terminal-notifier
+brew install the_silver_searcher
+brew install tig
+brew install watch
+brew install wget
+brew install xz
 
-brew install --verbose ssh-copy-id
-# dont forget to follow brew post-install --verbose instructions. brew info zsh
-brew install --verbose --disable-etcdir zsh
-brew install --verbose zsh-completions
+brew install ssh-copy-id
+# dont forget to follow brew post-install instructions. brew info zsh
+brew install --disable-etcdir zsh
+brew install zsh-completions
 
 exit 0

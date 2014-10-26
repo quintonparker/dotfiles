@@ -18,6 +18,7 @@ pwd
 if [ `uname` == "Darwin" ]
 then
     ./install-homebrew.sh
+    PATH=/usr/local/bin/:$PATH
     ./install-homebrew-cask.sh
 fi
 
