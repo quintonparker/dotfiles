@@ -169,4 +169,7 @@ set noautochdir
     " autocmd SwapExists * sleep 1
 " augroup END
 
+" auto reread files changed outside of vim
+set autoread
+
 source ~/.vimrc_local
