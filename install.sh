@@ -48,7 +48,6 @@ then
     ./install-homebrew-cask-formulas.sh
     ./install-quick-look-plugins.sh
     ./install-monaco-font.sh
-    ./osx-set-defaults.sh
     ./zsh-set-as-default.sh
 else
     sudo apt-get install zsh

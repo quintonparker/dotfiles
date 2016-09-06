@@ -38,6 +38,8 @@ alias mysql='mysql --auto-vertical-output --show-warnings --prompt="\U:\d> "'
 alias php-profile='php -d xdebug.profiler_enable=1'
 alias php-trace='php -d xdebug.auto_trace=1'
 
+alias vcurl='curl -H X-RHxqBZCN:Gz8czN7E'
+
 if [[ `which hub` != "hub not found" ]]
 then
     eval "$(hub alias -s)"

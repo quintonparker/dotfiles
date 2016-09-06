@@ -1,2 +1,1 @@
-brew tap phinze/cask
-brew install brew-cask
+brew tap caskroom/cask
