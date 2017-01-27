@@ -19,7 +19,6 @@ if [ `uname` == "Darwin" ]
 then
     ./install-homebrew.sh
     PATH=/usr/local/bin/:$PATH
-    ./install-homebrew-cask.sh
 fi
 
 echo "Installing gnu stow (dotfile deploy tool)..."
@@ -45,8 +44,6 @@ pwd
 if [ `uname` == "Darwin" ]
 then
     ./install-homebrew-formulas.sh
-    ./install-homebrew-cask-formulas.sh
-    ./install-quick-look-plugins.sh
     ./install-monaco-font.sh
     ./zsh-set-as-default.sh
 else
