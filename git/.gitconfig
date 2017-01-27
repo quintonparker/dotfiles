@@ -40,7 +40,5 @@
     helper = osxkeychain
 [push]
     default = simple
-[branch]
-    autosetuprebase = always
 [pull]
     rebase = preserve
