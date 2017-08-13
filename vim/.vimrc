@@ -84,8 +84,14 @@ nnoremap <leader><tab> :retab<CR>
 " save a key hit when saving a file
 nnoremap ; :
 
-nnoremap <leader>a :Ag<space>
-nnoremap <leader>g :Ag<space>
+" configure Ack plugin (to use silver searcher akshully!)
+cnoreabbrev Ack Ack!
+nnoremap <leader>a :Ack!<space>
+nnoremap <leader>g :Ack!<space>
+
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
 
 " enter paste mode
 nnoremap <leader>p :set paste<CR>
