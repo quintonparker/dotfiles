@@ -38,16 +38,6 @@ let g:ctrlp_max_files = 0
 so ~/.vim/bundle/vim-varnish/ftdetect/vcl.vim
 au! Syntax vcl source ~/.vim/bundle/vim-varnish/syntax/vcl.vim
 
-" disabled because it's too laggy. perhaps revisit and figure out why
-" autocomplete funcs and identifiers for languages
-" autocmd FileType python set omnifunc=pythoncomplete#Complete
-" autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-" autocmd FileType html,markdown set omnifunc=htmlcomplete#CompleteTags
-" autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-" autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
-" autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-" autocmd FileType c set omnifunc=ccomplete#Complete
-
 " these settings to complement, enable and/or override vim-sensible
 set tabstop=4
 set expandtab " use spaces to insert a tab
