@@ -16,13 +16,10 @@ set statusline+=%{fugitive#statusline()}
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-let g:syntastic_enable_signs=1
-let g:syntastic_auto_loc_list=1
-let g:syntastic_quiet_messages = {'level': 'warnings'}
-nmap <c-s> :SyntasticCheck<CR>
-
-let g:syntastic_python_flake8_args='--ignore=E501'
-let g:syntastic_python_pep8_args='--ignore=E501'
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " ctrlp.vim settings
 let g:ctrlp_cmd='CtrlPMixed'
@@ -33,6 +30,17 @@ let g:ctrlp_user_command=['.git/', 'cd %s && git ls-files -co --exclude-standard
 let g:ctrlp_open_new_file='t'
 let g:ctrlp_open_multiple_files='tj'
 let g:ctrlp_max_files = 0
+
+" git gutter settings
+set updatetime=250
+let g:gitgutter_map_keys = 0
+
+" always display gutter
+if exists('&signcolumn')  " Vim 7.4.2201
+  set signcolumn=yes
+else
+  let g:gitgutter_sign_column_always = 1
+endif
 
 " varnish vcl syntax highlighting
 so ~/.vim/bundle/vim-varnish/ftdetect/vcl.vim
