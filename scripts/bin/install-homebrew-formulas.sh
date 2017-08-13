@@ -34,9 +34,6 @@ brew install libyaml
 
 brew install --with-override-system-vi vim
 
-brew install nodejs
-brew install npm
-
 brew install php-cs-fixer
 brew install python
 
@@ -62,8 +59,5 @@ brew install ssh-copy-id
 # dont forget to follow brew post-install instructions. brew info zsh
 brew install --disable-etcdir zsh
 brew install zsh-completions
-
-brew tap joelcogen/macvimsplitbrowser
-brew install macvim-split-browser
 
 exit 0
