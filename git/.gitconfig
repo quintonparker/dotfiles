@@ -12,26 +12,16 @@
 [alias]
     ai = add --interactive
     br = branch
-    c = clean -f -d
     co = checkout
     ci = commit --verbose
-    ctags = !.git/hooks/ctags
-    diffws = "diff --ignore-space-at-eol --ignore-space-change --ignore-all-space --ignore-blank-lines"
-    diffv = difftool
     mergev = mergetool
     lg = log --stat --patch
     rb = rebase
     st = status
-    sync = !~/bin/git-sync.sh $@
-    rh = reset HEAD
     rhh = reset HEAD --hard
-[init]
-    templatedir = ~/.git_template
 [core]
     excludesfile = ~/.gitignore_global
     editor = /usr/bin/vim
-[diff]
-    tool = vimdiff
 [difftool]
     prompt = false
 [merge]
