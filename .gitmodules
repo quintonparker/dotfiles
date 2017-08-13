@@ -32,9 +32,6 @@
 [submodule "vim/.vim/bundle/vim-varnish"]
     path = vim/.vim/bundle/vim-varnish
     url = git@github.com:quintonparker/vim-varnish
-[submodule "vim/.vim/bundle/ack.vim"]
-    path = vim/.vim/bundle/ack.vim
-    url = git@github.com:mileszs/ack.vim.git
 [submodule "vim/.vim/bundle/vim-filetype-xdebug"]
     path = vim/.vim/bundle/vim-filetype-xdebug
     url = git@github.com:dominics/vim-filetype-xdebug.git

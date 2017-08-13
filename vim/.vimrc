@@ -84,7 +84,7 @@ nnoremap <leader><tab> :retab<CR>
 " save a key hit when saving a file
 nnoremap ; :
 
-nnoremap <leader>a :Ack<space>
+nnoremap <leader>a :Ag<space>
 nnoremap <leader>g :Ag<space>
 
 nnoremap <leader>t :TagbarToggle<CR>
