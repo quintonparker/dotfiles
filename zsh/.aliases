@@ -2,7 +2,6 @@ alias ls='ls -G'
 alias grep='grep --colour=auto'
 alias zgrep='zgrep --colour=auto'
 alias ack='ack --colour --break --group'
-alias ag='ag --pager="less -R"'
 alias less='less -R'
 alias diffsbs='diff --recursive --side-by-side --suppress-common-lines --speed-large-files'
 alias diffsbsws='diffsbs --strip-trailing-cr --ignore-blank-lines --ignore-all-space'
@@ -10,22 +9,17 @@ alias hist='history -f -D'
 
 alias x="chmod -v +x"
 alias v="vim"
+alias mv="mvim"
 alias c="clear"
-alias h="cd"
-alias t="tee"
-alias p="pwd"
 alias l='ls -ltaho'
 alias f='mdfind'
 
-alias gadd='git add'
 alias gco='git co'
 alias gci='git ci'
 alias grb='git rb'
-alias gbr='git br'
 alias gdi='git diff'
 alias gpu='git push'
 alias gpl='git pull'
-alias glg='git lg'
 alias gst='git status'
 
 alias pgrep='pgrep -ali'
