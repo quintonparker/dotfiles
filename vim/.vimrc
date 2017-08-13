@@ -34,9 +34,6 @@ let g:ctrlp_open_new_file='t'
 let g:ctrlp_open_multiple_files='tj'
 let g:ctrlp_max_files = 0
 
-" snipmate settings
-autocmd BufNewFile,BufRead *.phtml  set ft=php.html.js.css
-
 " varnish vcl syntax highlighting
 so ~/.vim/bundle/vim-varnish/ftdetect/vcl.vim
 au! Syntax vcl source ~/.vim/bundle/vim-varnish/syntax/vcl.vim
