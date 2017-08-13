@@ -33,9 +33,9 @@ fi
 echo "Symlinking in dot files..."
 if [ `uname` == "Darwin" ]
 then
-    stow --ignore="\.DS_Store" -d $DOTFILES_DIR -t $HOME -v 1 -S zsh -S vim -S git -S ctags -S scripts -S screen
+    stow --ignore="\.DS_Store" -d $DOTFILES_DIR -t $HOME -v 1 -S zsh -S vim -S git -S scripts -S screen
 else
-    stow -d $DOTFILES_DIR -t $HOME --verbose=1 zsh vim git ctags scripts screen
+    stow -d $DOTFILES_DIR -t $HOME --verbose=1 zsh vim git scripts screen
 fi
 
 cd "$DOTFILES_DIR/scripts/bin/"

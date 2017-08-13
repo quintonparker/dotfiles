@@ -20,7 +20,6 @@ fi
 brew install autoconf
 brew install automake
 brew install ack
-brew install ctags
 brew install curl
 brew install dos2unix
 brew install gdbm

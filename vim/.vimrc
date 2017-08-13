@@ -87,7 +87,6 @@ nnoremap ; :
 nnoremap <leader>a :Ag<space>
 nnoremap <leader>g :Ag<space>
 
-nnoremap <leader>t :TagbarToggle<CR>
 " enter paste mode
 nnoremap <leader>p :set paste<CR>
 " leave paste mode

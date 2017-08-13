@@ -10,9 +10,6 @@
 [submodule "vim/.vim/bundle/vim-sensible"]
     path = vim/.vim/bundle/vim-sensible
     url = git@github.com:tpope/vim-sensible.git
-[submodule "vim/.vim/bundle/tagbar"]
-    path = vim/.vim/bundle/tagbar
-    url = git@github.com:majutsushi/tagbar.git
 [submodule "vim/.vim/bundle/matchit.zip"]
     path = vim/.vim/bundle/matchit.zip
     url = git@github.com:vim-scripts/matchit.zip.git
