@@ -23,13 +23,10 @@ let g:syntastic_check_on_wq = 0
 
 " ctrlp.vim settings
 let g:ctrlp_cmd='CtrlPMixed'
-let g:ctrlp_working_path_mode=0
-let g:ctrlp_clear_cache_on_exit=0
-let g:ctrlp_dotfiles=1
-let g:ctrlp_user_command=['.git/', 'cd %s && git ls-files -co --exclude-standardcd %s && git ls-files']
 let g:ctrlp_open_new_file='t'
 let g:ctrlp_open_multiple_files='tj'
 let g:ctrlp_max_files = 0
+let g:ctrlp_user_command = 'mdfind -onlyin %s file'
 
 " git gutter settings
 set updatetime=250
