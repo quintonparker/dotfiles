@@ -9,7 +9,6 @@ alias hist='history -f -D'
 
 alias x="chmod -v +x"
 alias v="vim"
-alias mv="mvim"
 alias c="clear"
 alias l='ls -ltaho'
 alias f='mdfind'
