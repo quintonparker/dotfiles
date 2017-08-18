@@ -39,6 +39,9 @@ else
   let g:gitgutter_sign_column_always = 1
 endif
 
+" tagbar settings
+nnoremap <leader>t :TagbarToggle<cr>
+
 " varnish vcl syntax highlighting
 so ~/.vim/bundle/vim-varnish/ftdetect/vcl.vim
 au! Syntax vcl source ~/.vim/bundle/vim-varnish/syntax/vcl.vim

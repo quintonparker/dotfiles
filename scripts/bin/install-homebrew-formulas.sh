@@ -21,6 +21,7 @@ brew install autoconf
 brew install automake
 brew install ack
 brew install curl
+brew install ctags
 brew install dos2unix
 brew install gdbm
 brew install gettext

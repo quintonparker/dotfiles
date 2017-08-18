@@ -52,5 +52,8 @@
     path = vim/.vim/bundle/ctrlp.vim
     url = git@github.com:ctrlpvim/ctrlp.vim.git
 [submodule "vim/.vim/bundle/vim-gitgutter"]
-	path = vim/.vim/bundle/vim-gitgutter
-	url = git@github.com:airblade/vim-gitgutter.git
+    path = vim/.vim/bundle/vim-gitgutter
+    url = git@github.com:airblade/vim-gitgutter.git
+[submodule "vim/.vim/bundle/tagbar"]
+    path = vim/.vim/bundle/tagbar
+    url = git@github.com:majutsushi/tagbar.git
