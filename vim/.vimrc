@@ -27,7 +27,6 @@ let g:ctrlp_cmd='CtrlPMRUFiles'
 let g:ctrlp_open_new_file='t'
 let g:ctrlp_open_multiple_files='tj'
 let g:ctrlp_max_files = 0
-let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_user_command = 'find %s -type f'
 let g:user_command_async = 1
 
@@ -101,11 +100,12 @@ nnoremap <leader>pp :set nopaste<CR>
 " shortcut to switch off search highlighting
 nnoremap <leader>h :noh<cr>
 
-" list buffers
 "" discard any changes to current buffer
  " clear all lines in the buffer. akin to "clear" in terminal
 nnoremap <C-c> gg dG<CR>
+" abandon edits since opening
 nnoremap <leader>e :e! %<CR>
+" list open buffers
 nnoremap <leader>b :ls<CR>
 nnoremap <tab> :bnext<CR>
 nnoremap <s-tab> :bprevious<CR>
@@ -115,6 +115,7 @@ nnoremap <leader>d :bdelete<CR>
 nnoremap <leader>dd :bufdo bd<CR>
 
 " bring up netwrw!
+let g:netrw_banner = 0
 nnoremap <leader>x :Explore<CR>
 
 " python tools

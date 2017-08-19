@@ -1,3 +1,6 @@
+" tree mode file explorer because in gui mode we have mouse support!
+let g:netrw_liststyle = 3
+
 set columns=120
 set lines=120
 
