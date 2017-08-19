@@ -5,9 +5,10 @@ execute pathogen#infect()
 " airline settings
 if has('gui_running')
     let g:airline_powerline_fonts = 1
-else
-    let g:airline#extensions#tabline#enabled = 1
 endif
+
+let g:airline#extensions#tabline#enabled = 1
+
 
 " fugitive settings
 set statusline+=%{fugitive#statusline()}
@@ -97,16 +98,21 @@ nnoremap <leader>p :set paste<CR>
 nnoremap <leader>pp :set nopaste<CR>
 " shortcut to switch off search highlighting
 nnoremap <leader>h :noh<cr>
+
+" list buffers
+"" discard any changes to current buffer
+ " clear all lines in the buffer. akin to "clear" in terminal
+nnoremap <leader>c gg dG<CR>
+nnoremap <leader>e :e! %<CR>
+nnoremap <leader>b :ls<CR>
+nnoremap <leader>bu :bunload<CR>
+nnoremap <leader>bn :bnext<CR>
+nnoremap <leader>bp :bprevious<CR>
 " delete this buffer
 nnoremap <leader>d :bd<CR>
 " delete all open buffers
 nnoremap <leader>dd :bufdo bd<CR>
- " clear all lines in the buffer. akin to "clear" in terminal
-nnoremap <leader>c gg dG<CR>
-" list buffers
-nnoremap <leader>b :ls<CR>
-" discard any changes to current buffer
-nnoremap <leader>e :e! %<CR>
+
 " bring up netwrw!
 nnoremap <leader>x :Explore<CR>
 
@@ -159,15 +165,6 @@ set foldlevelstart=1
 
 " disable auto directory switching
 set noautochdir
-
-" damien conway's simultaneous edit preventer
-" augroup NoSimultaneousEdits
-    " autocmd!
-    " autocmd SwapExists * let v:swapchoice = 'o'
-    " autocmd SwapExists * echo 'Duplicate edit session (readonly)'
-    " autocmd SwapExists * echohl None
-    " autocmd SwapExists * sleep 1
-" augroup END
 
 " auto reread files changed outside of vim
 set autoread
