@@ -23,11 +23,13 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " ctrlp.vim settings
-let g:ctrlp_cmd='CtrlPMixed'
+let g:ctrlp_cmd='CtrlPMRUFiles'
 let g:ctrlp_open_new_file='t'
 let g:ctrlp_open_multiple_files='tj'
 let g:ctrlp_max_files = 0
-let g:ctrlp_user_command = 'mdfind -onlyin %s file'
+let g:ctrlp_clear_cache_on_exit = 0
+let g:ctrlp_user_command = 'find %s -type f'
+let g:user_command_async = 1
 
 " git gutter settings
 set updatetime=250
@@ -102,14 +104,13 @@ nnoremap <leader>h :noh<cr>
 " list buffers
 "" discard any changes to current buffer
  " clear all lines in the buffer. akin to "clear" in terminal
-nnoremap <leader>c gg dG<CR>
+nnoremap <C-c> gg dG<CR>
 nnoremap <leader>e :e! %<CR>
 nnoremap <leader>b :ls<CR>
-nnoremap <leader>bu :bunload<CR>
-nnoremap <leader>bn :bnext<CR>
-nnoremap <leader>bp :bprevious<CR>
-" delete this buffer
-nnoremap <leader>d :bd<CR>
+nnoremap <tab> :bnext<CR>
+nnoremap <s-tab> :bprevious<CR>
+nnoremap <backspace> :bprevious<CR>
+nnoremap <leader>d :bdelete<CR>
 " delete all open buffers
 nnoremap <leader>dd :bufdo bd<CR>
 
