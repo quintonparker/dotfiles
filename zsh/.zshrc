@@ -98,3 +98,6 @@ source $HOME/.aliases
 source $HOME/lib/git
 
 . $HOME/.npm-completion
+export PATH="/usr/local/opt/curl/bin:$PATH"
+
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh

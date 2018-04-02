@@ -18,6 +18,7 @@ then
 fi
 
 brew install autoconf
+brew install autojump
 brew install automake
 brew install ack
 brew install curl
