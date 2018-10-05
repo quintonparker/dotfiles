@@ -28,7 +28,6 @@ let g:ctrlp_open_new_file='t'
 let g:ctrlp_open_multiple_files='tj'
 let g:ctrlp_max_files = 0
 let g:ctrlp_user_command = 'find %s -type f'
-let g:user_command_async = 1
 
 " git gutter settings
 set updatetime=250
@@ -66,7 +65,7 @@ set undodir=~/.vim/undodir
 
 " display soft-warning that i'm going beyond 100 columns
 highlight ColorColumn ctermbg=magenta
-call matchadd('ColorColumn', '\%81v', 100)
+call matchadd('ColorColumn', '\%81v', 120)
 
 " START KEY mappings
 
