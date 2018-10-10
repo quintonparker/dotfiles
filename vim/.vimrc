@@ -161,11 +161,6 @@ autocmd FileType php let php_htmlInStrings=1
 autocmd FileType php let php_noShortTags=0
 autocmd FileType php let php_folding=1
 
-autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
-autocmd Filetype yaml setlocal ts=2 sts=2 sw=2
-autocmd BufRead,BufNewFile *.conf setf dosini
-autocmd Filetype python setlocal ts=4 sts=4 sw=4
-
 " close some folds but not all
 set foldlevelstart=1
 
