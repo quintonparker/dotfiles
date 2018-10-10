@@ -17,49 +17,29 @@ then
   exit
 fi
 
-brew install autoconf
-brew install autojump
-brew install automake
 brew install ack
 brew install curl
 brew install ctags
 brew install dos2unix
-brew install gdbm
-brew install gettext
-brew install --with-blk-sha1 --with-pcre --with-gettext --without-completions git
+brew install git
 brew install gnu-sed --with-default-names
 brew install jq
-# workaround for hub completion bug https://github.com/github/hub/issues/231
-brew install --HEAD hub
-brew install libtool
-brew install libyaml
+brew install hub
 
 brew install --with-override-system-vi vim
+brew install --with-override-system-vi macvim
 
 brew install php-cs-fixer
-brew install python
 
-# these usually required for pip deps
-# usually needed for python gevent
-brew install libevent
-
-brew install openssl
-brew install pcre
-brew install pkg-config
 brew install pv
-brew install readline
 brew install siege
 brew install stow
 brew install terminal-notifier
 brew install the_silver_searcher
-brew install tig
-brew install watch
 brew install wget
-brew install xz
 
-brew install ssh-copy-id
 # dont forget to follow brew post-install instructions. brew info zsh
-brew install --disable-etcdir zsh
+brew install --disable-etcdir --with-pcre zsh
 brew install zsh-completions
 
 exit 0
