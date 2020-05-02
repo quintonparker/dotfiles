@@ -10,14 +10,8 @@
     diff = auto
     ui = true
 [alias]
-    ai = add --interactive
-    br = branch
     co = checkout
     ci = commit --verbose
-    mergev = mergetool
-    lg = log --stat --patch
-    rb = rebase
-    st = status
     rhh = reset HEAD --hard
 [core]
     excludesfile = ~/.gitignore_global
@@ -32,8 +26,3 @@
     default = simple
 [pull]
     rebase = preserve
-[filter "lfs"]
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
