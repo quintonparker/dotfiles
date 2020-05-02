@@ -2,11 +2,6 @@ set nocompatible " we don't need no vi backwards compatibility
 
 execute pathogen#infect()
 
-" airline settings
-if has('gui_running')
-    let g:airline_powerline_fonts = 1
-endif
-
 let g:airline#extensions#tabline#enabled = 1
 
 " Syntastic settings
@@ -109,7 +104,7 @@ nnoremap k gk
 set visualbell " kills the beeping
 
 " set large-ish font
-set guifont=Monaco\ for\ Powerline:h15
+set guifont=Monaco:h15
 colorscheme desert
 set background=light
 

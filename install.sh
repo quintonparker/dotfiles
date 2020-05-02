@@ -32,7 +32,6 @@ cd "$DOTFILES_DIR/scripts/bin/"
 pwd
 
 ./install-homebrew-formulas.sh
-./install-monaco-font.sh
 
 touch $HOME/.vimrc_local
 ./install-vim-plugins.sh
