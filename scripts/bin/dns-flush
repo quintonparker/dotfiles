@@ -1,1 +1,1 @@
-sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder; say DNS flushed
+sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; say DNS flushed

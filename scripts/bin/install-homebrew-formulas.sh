@@ -19,27 +19,15 @@ fi
 
 brew install ack
 brew install curl
-brew install ctags
 brew install dos2unix
 brew install git
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 brew install jq
 brew install hub
-
-brew install --with-override-system-vi vim
-brew install --with-override-system-vi macvim
-
-brew install php-cs-fixer
-
 brew install pv
 brew install siege
 brew install stow
-brew install terminal-notifier
 brew install the_silver_searcher
 brew install wget
-
-# dont forget to follow brew post-install instructions. brew info zsh
-brew install --disable-etcdir --with-pcre zsh
-brew install zsh-completions
 
 exit 0

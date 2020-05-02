@@ -13,22 +13,11 @@ alias c="clear"
 alias l='ls -ltaho'
 alias f='mdfind'
 
-alias gco='git co'
-alias gci='git ci'
-alias grb='git rb'
-alias gdi='git diff'
-alias gpu='git push'
-alias gpl='git pull'
-alias gst='git status'
-
 alias pgrep='pgrep -ali'
 alias watch='watch --differences'
 alias which='which -a'
 
 alias mysql='mysql --auto-vertical-output --show-warnings --prompt="\U:\d> "'
-
-alias php-profile='php -d xdebug.profiler_enable=1'
-alias php-trace='php -d xdebug.auto_trace=1'
 
 if [[ `which hub` != "hub not found" ]]
 then

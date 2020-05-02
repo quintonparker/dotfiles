@@ -63,7 +63,7 @@ set gdefault " applies substitutions globally on lines by default
 set undofile " enable persistent undo functionality
 set undodir=~/.vim/undodir
 
-" display soft-warning that i'm going beyond 100 columns
+" display soft-warning that i'm going beyond 120 columns
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%81v', 120)
 
@@ -160,6 +160,9 @@ autocmd FileType php let php_sql_query=1
 autocmd FileType php let php_htmlInStrings=1
 autocmd FileType php let php_noShortTags=0
 autocmd FileType php let php_folding=1
+
+autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
+autocmd FileType javascript setlocal expandtab shiftwidth=2 softtabstop=2
 
 " close some folds but not all
 set foldlevelstart=1

@@ -15,46 +15,27 @@ git submodule update --init --recursive
 cd "$DOTFILES_DIR/scripts/bin/"
 pwd
 
-if [ `uname` == "Darwin" ]
+if [ ! `uname` == "Darwin" ] 
 then
-    ./install-homebrew.sh
-    PATH=/usr/local/bin/:$PATH
+    echo "Hey bro. Sorry only works on Mac OS"
+    exit 1
 fi
 
 echo "Installing gnu stow (dotfile deploy tool)..."
 
-if [ `uname` == "Darwin" ]
-then
-    brew install stow
-else
-    sudo apt-get install stow
-fi
+brew install stow
 
 echo "Symlinking in dot files..."
-if [ `uname` == "Darwin" ]
-then
-    stow --ignore="\.DS_Store" -d $DOTFILES_DIR -t $HOME -v 1 -S zsh -S vim -S git -S scripts -S screen
-else
-    stow -d $DOTFILES_DIR -t $HOME --verbose=1 zsh vim git scripts screen
-fi
+stow --ignore="\.DS_Store" -d $DOTFILES_DIR -t $HOME -v 1 -S zsh -S vim -S git -S scripts -S screen
 
 cd "$DOTFILES_DIR/scripts/bin/"
 pwd
 
-if [ `uname` == "Darwin" ]
-then
-    ./install-homebrew-formulas.sh
-    ./install-monaco-font.sh
-    ./zsh-set-as-default.sh
-else
-    sudo apt-get install zsh
-    sudo chsh -s `which zsh` $USER
-fi
+./install-homebrew-formulas.sh
+./install-monaco-font.sh
 
 touch $HOME/.vimrc_local
 ./install-vim-plugins.sh
 mkdir -p ~/.vim/undodir
-
-./zsh-cache-nuke.sh
 
 echo "All done. You should restart your terminal for new shell to take effect!"
