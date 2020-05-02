@@ -14,9 +14,6 @@
 [submodule "vim/.vim/bundle/ag.vim-upgrade"]
     path = vim/.vim/bundle/ag.vim-upgrade
     url = git@github.com:rking/ag.vim
-[submodule "vim/.vim/bundle/vim-varnish"]
-    path = vim/.vim/bundle/vim-varnish
-    url = git@github.com:quintonparker/vim-varnish
 [submodule "vim/.vim/bundle/vim-surround"]
     path = vim/.vim/bundle/vim-surround
     url = git@github.com:tpope/vim-surround.git

@@ -18,10 +18,6 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-" varnish vcl syntax highlighting
-so ~/.vim/bundle/vim-varnish/ftdetect/vcl.vim
-au! Syntax vcl source ~/.vim/bundle/vim-varnish/syntax/vcl.vim
-
 " these settings to complement, enable and/or override vim-sensible
 set tabstop=4
 set expandtab " use spaces to insert a tab
