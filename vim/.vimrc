@@ -9,10 +9,6 @@ endif
 
 let g:airline#extensions#tabline#enabled = 1
 
-
-" fugitive settings
-set statusline+=%{fugitive#statusline()}
-
 " Syntastic settings
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -21,27 +17,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
-" ctrlp.vim settings
-let g:ctrlp_cmd='CtrlPMRUFiles'
-let g:ctrlp_open_new_file='t'
-let g:ctrlp_open_multiple_files='tj'
-let g:ctrlp_max_files = 0
-let g:ctrlp_user_command = 'find %s -type f'
-
-" git gutter settings
-set updatetime=250
-let g:gitgutter_map_keys = 0
-
-" always display gutter
-if exists('&signcolumn')  " Vim 7.4.2201
-  set signcolumn=yes
-else
-  let g:gitgutter_sign_column_always = 1
-endif
-
-" tagbar settings
-nnoremap <leader>t :TagbarToggle<cr>
 
 " varnish vcl syntax highlighting
 so ~/.vim/bundle/vim-varnish/ftdetect/vcl.vim
@@ -83,15 +58,6 @@ nnoremap <leader><tab> :retab<CR>
 " save a key hit when saving a file
 nnoremap ; :
 
-" configure Ack plugin (to use silver searcher akshully!)
-cnoreabbrev Ack Ack!
-nnoremap <leader>a :Ack!<space>
-nnoremap <leader>g :Ack!<space>
-
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
-endif
-
 " enter paste mode
 nnoremap <leader>p :set paste<CR>
 " leave paste mode
@@ -116,10 +82,6 @@ nnoremap <leader>dd :bufdo bd<CR>
 " bring up netwrw!
 let g:netrw_banner = 0
 nnoremap <leader>x :Explore<CR>
-
-" python tools
-nnoremap <leader>f8 :!flake8 --ignore=E501 %<CR>
-nnoremap <leader>p8 :!pep8 --ignore=E501 %<CR>
 
 " edit $MYVIMRC on the fly in any window
 nnoremap <leader>ee :tabnew $MYVIMRC<cr>:noh<cr>
