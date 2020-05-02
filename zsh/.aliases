@@ -5,7 +5,6 @@ alias ack='ack --colour --break --group'
 alias less='less -R'
 alias diffsbs='diff --recursive --side-by-side --suppress-common-lines --speed-large-files'
 alias diffsbsws='diffsbs --strip-trailing-cr --ignore-blank-lines --ignore-all-space'
-alias hist='history -f -D'
 
 alias x="chmod -v +x"
 alias v="vim"
@@ -13,7 +12,6 @@ alias c="clear"
 alias l='ls -ltaho'
 alias f='mdfind'
 
-alias pgrep='pgrep -ali'
 alias watch='watch --differences'
 alias which='which -a'
 
