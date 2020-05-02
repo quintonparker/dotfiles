@@ -8,24 +8,15 @@
     path = vim/.vim/bundle/matchit.zip
     url = git@github.com:vim-scripts/matchit.zip.git
     ignore = untracked
-[submodule "vim/.vim/bundle/vim-fugitive"]
-    path = vim/.vim/bundle/vim-fugitive
-    url = git@github.com:tpope/vim-fugitive.git
 [submodule "vim/.vim/bundle/vim-airline"]
     path = vim/.vim/bundle/vim-airline
     url = git@github.com:bling/vim-airline
 [submodule "vim/.vim/bundle/ag.vim-upgrade"]
     path = vim/.vim/bundle/ag.vim-upgrade
     url = git@github.com:rking/ag.vim
-[submodule "vim/.vim/bundle/ack.vim"]
-    path = vim/.vim/bundle/ack.vim
-    url = git@github.com:mileszs/ack.vim.git
 [submodule "vim/.vim/bundle/vim-varnish"]
     path = vim/.vim/bundle/vim-varnish
     url = git@github.com:quintonparker/vim-varnish
-[submodule "vim/.vim/bundle/vim-filetype-xdebug"]
-    path = vim/.vim/bundle/vim-filetype-xdebug
-    url = git@github.com:dominics/vim-filetype-xdebug.git
 [submodule "vim/.vim/bundle/vim-surround"]
     path = vim/.vim/bundle/vim-surround
     url = git@github.com:tpope/vim-surround.git
@@ -35,16 +26,3 @@
 [submodule "vim/.vim/bundle/vim-unimpaired"]
     path = vim/.vim/bundle/vim-unimpaired
     url = git@github.com:tpope/vim-unimpaired
-[submodule "vim/.vim/bundle/php-cs-fixer"]
-    path = vim/.vim/bundle/php-cs-fixer
-    url = git@github.com:stephpy/vim-php-cs-fixer.git
-    ignore = untracked
-[submodule "vim/.vim/bundle/ctrlp.vim"]
-    path = vim/.vim/bundle/ctrlp.vim
-    url = git@github.com:ctrlpvim/ctrlp.vim.git
-[submodule "vim/.vim/bundle/vim-gitgutter"]
-    path = vim/.vim/bundle/vim-gitgutter
-    url = git@github.com:airblade/vim-gitgutter.git
-[submodule "vim/.vim/bundle/tagbar"]
-    path = vim/.vim/bundle/tagbar
-    url = git@github.com:majutsushi/tagbar.git
