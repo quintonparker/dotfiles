@@ -26,7 +26,7 @@ echo "Installing gnu stow (dotfile deploy tool)..."
 brew install stow
 
 echo "Symlinking in dot files..."
-stow --ignore="\.DS_Store" -d $DOTFILES_DIR -t $HOME -v 1 -S zsh -S vim -S git -S scripts -S screen
+stow --ignore="\.DS_Store" -d $DOTFILES_DIR -t $HOME -v 1 -S zsh -S vim -S git -S scripts
 
 cd "$DOTFILES_DIR/scripts/bin/"
 pwd
