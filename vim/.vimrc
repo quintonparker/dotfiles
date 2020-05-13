@@ -104,7 +104,7 @@ nnoremap k gk
 set visualbell " kills the beeping
 
 " set large-ish font
-set guifont=Monaco:h15
+set guifont=Menlo:h15
 colorscheme desert
 set background=light
 
