@@ -116,6 +116,7 @@ autocmd FileType php let php_folding=1
 
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
 autocmd FileType javascript setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd FileType yaml setlocal expandtab shiftwidth=2 softtabstop=2
 
 " close some folds but not all
 set foldlevelstart=1
